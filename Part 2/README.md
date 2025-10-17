@@ -20,14 +20,14 @@ This Power BI project explores three core areas of life in **Maji Ndogo**—**cr
 
 
 ---
-![Queue Report](Resources/Images/Part2/Queue%20Report.png)
+![Queue Report](/Resources/Images/Part2/Queue%20Report.png)
 ### 🔹 Queue Report
 - **Women** queue for the longest time on average.
 - People queue the longest on **Saturdays**, peaking in the **evening hours**.
 - **Kilimani** and **Akatsi** again show the longest queue durations, echoing their status as high-crime areas—possibly linked to overcrowding or poor public infrastructure.
 
 ---
-![Well Pollution](Resources/Images/Part2/Well%20Pollution.png)
+![Well Pollution](/Resources/Images/Part2/Well%20Pollution.png)
 ### 🌍 Cross-Cutting Issues
 - **Kilimani and Akatsi** provinces emerge as high-pressure zones across all three reports, indicating a need for urgent intervention.
 - **Women and children are disproportionately affected** by both safety concerns and water access burdens.

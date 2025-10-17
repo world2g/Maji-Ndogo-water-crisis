@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Maji_Ndogo_Part3"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "27e4cf10-1829-4c42-b48f-cbf801b77e7c"
+  }
+}

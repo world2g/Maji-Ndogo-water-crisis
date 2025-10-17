@@ -1,0 +1,6 @@
+Total People Served = 
+CALCULATE(
+    SUM(water_source[number_of_people_served]),
+    TREATAS(VALUES(location[location_id]), visits[location_id])
+)
+

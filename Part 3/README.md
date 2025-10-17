@@ -6,7 +6,7 @@ It integrates environmental data, infrastructure investment details, and populat
 
 ##  Pollution Report
 
-![Maji Ndogo Pollution Report](Resources\Images\Part3\Pollution%20Report.png)
+![Maji Ndogo Pollution Report](/Resources\Images\Part3\Pollution%20Report.png)
 
 The goal here is to assess the state of pollution of the water sources in the different provinces. 
 
@@ -35,8 +35,8 @@ The improvements target both purification of water sources and expansion of wate
 
 ### National Report
 
-![National Report](Resources\Images\Part3\National%20-%20Province.png)
-![National Report](Resources\Images\Part3\National%20-%20Improvement.png)
+![National Report](/Resources\Images\Part3\National%20-%20Province.png)
+![National Report](/Resources\Images\Part3\National%20-%20Improvement.png)
 
 
 The snapshot show a detailed breakdown of the **budget allocation** by:
@@ -71,8 +71,8 @@ The analysis can be further examined from a **provincial perspective**, where th
 
 This breakdown highlights the **projected expenditure** for each improvement initiative — such as well drilling, filtration systems, and water treatment — and the **total cost per province**. The visualisations below provide a comparative view of these distributions:
 
-![Kilimani](Resources\Images\Part3\Kilimani.png)
-![Amanzi](Resources\Images\Part3\Amazi.png)
-![Akatsi](Resources\Images\Part3\Akatsi.png)
-![Hawassa](Resources\Images\Part3\Hawassa.png)
-![Sokoto](Resources\Images\Part3\Sokoto.png)
+![Kilimani](/Resources\Images\Part3\Kilimani.png)
+![Amanzi](/Resources\Images\Part3\Amazi.png)
+![Akatsi](/Resources\Images\Part3\Akatsi.png)
+![Hawassa](/Resources\Images\Part3\Hawassa.png)
+![Sokoto](/Resources\Images\Part3\Sokoto.png)

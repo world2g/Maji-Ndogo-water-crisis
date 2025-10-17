@@ -1,0 +1,1922 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.139.2054.0 (24.12)+334ca1c95b576cc53924655643b0d36f21caac55"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"infrastructure_cost\",\"location\",\"project_progress\",\"queue_composition\",\"visits\",\"water_source\",\"water_source_related_crime\",\"well_pollution\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "3cd936a0-da5e-41f6-944c-383f7b640611",
+        "fromColumn": "time_of_record",
+        "fromTable": "visits",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_5cb91aa1-f0b7-478c-849e-6503961379f7"
+      },
+      {
+        "name": "0792e44b-d9b2-483d-9e49-0bbce45848a5",
+        "fromColumn": "time_of_incident",
+        "fromTable": "water_source_related_crime",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_3fc8a83b-df62-483d-a4b2-d05e973d6dad"
+      },
+      {
+        "name": "4af4e067-6b6a-4a9e-a2a8-82bb8a56de4d",
+        "fromColumn": "date",
+        "fromTable": "well_pollution",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_47bf2fdc-5c18-4ba3-9825-a66f69d22792"
+      },
+      {
+        "name": "AutoDetected_61e99f58-da3c-446a-9d2b-7fc3596edf75",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "source_id",
+        "fromTable": "project_progress",
+        "toColumn": "source_id",
+        "toTable": "water_source"
+      },
+      {
+        "name": "AutoDetected_a105a295-5cfa-401c-a08f-b46fb51ee1d9",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "source_id",
+        "fromTable": "well_pollution",
+        "toColumn": "source_id",
+        "toTable": "water_source"
+      },
+      {
+        "name": "AutoDetected_be140e6b-3c7f-4591-9e85-68f06b4ae86e",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "record_id",
+        "fromTable": "visits",
+        "toColumn": "record_id",
+        "toTable": "queue_composition"
+      },
+      {
+        "name": "670ac836-bbe1-52f8-0d8f-832bc690cdec",
+        "fromColumn": "loc_id",
+        "fromTable": "water_source_related_crime",
+        "toColumn": "location_id",
+        "toTable": "location"
+      },
+      {
+        "name": "7a076935-3afd-98c5-8f6c-48dab45b29d4",
+        "fromColumn": "location_id",
+        "fromTable": "visits",
+        "toColumn": "location_id",
+        "toTable": "location"
+      },
+      {
+        "name": "ad31af5b-dc0b-95ea-013e-276e46277f45",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "source_id",
+        "fromTable": "visits",
+        "toColumn": "source_id",
+        "toTable": "water_source"
+      }
+    ],
+    "sourceQueryCulture": "en-KE",
+    "tables": [
+      {
+        "name": "infrastructure_cost",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "improvement",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dfd56f1e-b0ba-45a5-bfb4-3ecc628f008b",
+            "sourceColumn": "improvement",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "unit_cost_USD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b9f2be17-c71a-4a56-a8ce-41901f21ed41",
+            "sourceColumn": "unit_cost_USD",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "c1a8ed54-be1c-4dfd-bb4e-9ad111c95640",
+        "partitions": [
+          {
+            "name": "infrastructure_cost",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\marti\\OneDrive\\Documents\\ALX Projects\\Data Analytics\\Visualising Data\\Md_water_services_data.xlsx\"), null, true),",
+                "    infrastructure_cost_Sheet = Source{[Item=\"infrastructure_cost\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(infrastructure_cost_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"improvement\", type text}, {\"unit_cost_USD\", Int64.Type}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "location",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "location_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "94ff9499-239f-41e4-a507-2dfb10538720",
+            "sourceColumn": "location_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "address",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "98fe834e-e227-42b3-90d3-9ddf18a25e7e",
+            "sourceColumn": "address",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "province_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5dce5add-f938-486a-a33f-ca453e88f297",
+            "sourceColumn": "province_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "town_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c5253e57-a9f6-40d1-ad26-a379cfb3c4ae",
+            "sourceColumn": "town_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "location_type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fd302020-ad78-440e-af08-ee66b787b76e",
+            "sourceColumn": "location_type",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "67e8730e-0f01-4a56-8675-6a4906cfa636",
+        "partitions": [
+          {
+            "name": "location",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\marti\\OneDrive\\Documents\\ALX Projects\\Data Analytics\\Visualising Data\\Md_water_services_data.xlsx\"), null, true),",
+                "    location_Sheet = Source{[Item=\"location\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(location_Sheet,{{\"Column1\", type text}, {\"Column2\", type text}, {\"Column3\", type text}, {\"Column4\", type text}, {\"Column5\", type text}}),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Changed Type\", [PromoteAllScalars=true]),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"location_id\", type text}, {\"address\", type text}, {\"province_name\", type text}, {\"town_name\", type text}, {\"location_type\", type text}}),",
+                "    #\"Removed Duplicates\" = Table.Distinct(#\"Changed Type1\")",
+                "in",
+                "    #\"Removed Duplicates\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "project_progress",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "project_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4a5e5191-272c-414a-8a81-0cef0acab31d",
+            "sourceColumn": "project_id",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "source_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "863ad810-18ea-478a-a8fb-7260e4d34e27",
+            "sourceColumn": "source_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "address",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9be044a9-2db0-4a3f-a871-c19a13368c6b",
+            "sourceColumn": "address",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "town",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9dfcf912-c49e-46e1-9136-8d3a5732713e",
+            "sourceColumn": "town",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "province",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ef80afca-3ce5-4050-b53c-9ec5a7a9c99c",
+            "sourceColumn": "province",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "source_type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "db298707-5b4e-4acd-9fdc-1e4511b4f0a7",
+            "sourceColumn": "source_type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "improvement",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "00228ebe-3122-45a3-a0a3-cb4225431ff4",
+            "sourceColumn": "improvement",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "source_status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6bcd055c-cd7e-490a-9275-856b48603505",
+            "sourceColumn": "source_status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "date_of_completion",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fd66cc7a-9769-47d8-bdf3-988d6951f9fe",
+            "sourceColumn": "date_of_completion",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "comments",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dc7bbfda-78e5-4d31-80d4-6f4a0f419905",
+            "sourceColumn": "comments",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "b6a23724-8ea7-40be-9054-674c0d565a04",
+        "partitions": [
+          {
+            "name": "project_progress",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\marti\\OneDrive\\Documents\\ALX Projects\\Data Analytics\\Visualising Data\\Md_water_services_data.xlsx\"), null, true),",
+                "    project_progress_Sheet = Source{[Item=\"project_progress\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(project_progress_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"project_id\", Int64.Type}, {\"source_id\", type text}, {\"address\", type text}, {\"town\", type text}, {\"province\", type text}, {\"source_type\", type text}, {\"improvement\", type text}, {\"source_status\", type text}, {\"date_of_completion\", type any}, {\"comments\", type any}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "queue_composition",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "record_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8ae764da-2f84-4f8c-8697-0f41de1b59b0",
+            "sourceColumn": "record_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "percent_male",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "7b768220-f4c4-470e-9f8b-47996164c5e5",
+            "sourceColumn": "percent_male",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "percent_female",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "97f25d10-f593-4a99-bf0f-0fc780e771ea",
+            "sourceColumn": "percent_female",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "percent_child",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "3cc0e0d0-c14f-49d7-a8ea-be6890dd13bd",
+            "sourceColumn": "percent_child",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "c7d1e7e5-8028-41fd-b405-e35aaae02366",
+        "partitions": [
+          {
+            "name": "queue_composition",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\marti\\OneDrive\\Documents\\ALX Projects\\Data Analytics\\Visualising Data\\Md_water_services_data.xlsx\"), null, true),",
+                "    queue_composition_Sheet = Source{[Item=\"queue_composition\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(queue_composition_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Column1\", Int64.Type}, {\"record_id\", Int64.Type}, {\"percent_male\", type number}, {\"percent_female\", type number}, {\"percent_child\", type number}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Column1\"})",
+                "in",
+                "    #\"Removed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "visits",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "record_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "07648955-57bb-44f2-9deb-4bd77a57c245",
+            "sourceColumn": "record_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "location_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b82109d6-4cf0-45a4-93c0-6aed94650b12",
+            "sourceColumn": "location_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "source_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4d5152b0-dfb3-467e-967f-e0fdb3c4d948",
+            "sourceColumn": "source_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "time_of_record",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "7a5e7c9d-b558-4a95-ab62-a7ae18129081",
+            "sourceColumn": "time_of_record",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_5cb91aa1-f0b7-478c-849e-6503961379f7"
+                },
+                "isDefault": true,
+                "relationship": "3cd936a0-da5e-41f6-944c-383f7b640611"
+              }
+            ]
+          },
+          {
+            "name": "visit_count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c9eaefde-2826-41c6-95bb-3f651f5273c7",
+            "sourceColumn": "visit_count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "time_in_queue",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8b8a2cd4-84c9-415a-931e-e32cf4f36b7b",
+            "sourceColumn": "time_in_queue",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "assigned_employee_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "71b52bc3-37a8-40f2-85cd-9e7de6338feb",
+            "sourceColumn": "assigned_employee_id",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "name_of_day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "15ecc8a2-16b2-46d7-b336-3bc318a9d183",
+            "sourceColumn": "name_of_day",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "hour_of_day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "19029e72-c050-411a-b4d4-ec4d590c8b4e",
+            "sourceColumn": "hour_of_day",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "f4d0d529-2c2e-4221-8323-c1253e4bf462",
+        "partitions": [
+          {
+            "name": "visits",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\marti\\OneDrive\\Documents\\ALX Projects\\Data Analytics\\Visualising Data\\Md_water_services_data.xlsx\"), null, true),",
+                "    visits_Sheet = Source{[Item=\"visits\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(visits_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"record_id\", Int64.Type}, {\"location_id\", type text}, {\"source_id\", type text}, {\"time_of_record\", type datetime}, {\"visit_count\", Int64.Type}, {\"time_in_queue\", Int64.Type}, {\"assigned_employee_id\", Int64.Type}}),",
+                "    #\"Inserted Day Name\" = Table.AddColumn(#\"Changed Type\", \"Day Name\", each Date.DayOfWeekName([time_of_record]), type text),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Inserted Day Name\",{{\"Day Name\", \"name_of_day\"}}),",
+                "    #\"Inserted Hour\" = Table.AddColumn(#\"Renamed Columns\", \"Hour\", each Time.Hour([time_of_record]), Int64.Type),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Inserted Hour\",{{\"Hour\", \"hour_of_day\"}})",
+                "in",
+                "    #\"Renamed Columns1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_dce15417-c7a5-45ce-a6f9-c0240fe9bba0",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "bc571903-6592-4f62-9ba8-538527615f3a",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "b607f2cc-7ec5-467a-909e-de541ba20422",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "cbce6974-3f58-43e5-b065-02e9657741ec",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "ab8fcef5-1e36-457a-817c-8069942e71a9",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "05d285b0-fd26-4480-9177-b5d52806b744",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "1941b0d0-18b3-4e0e-a738-5b34adb46468",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "cd615cf9-0bf5-460d-8c38-bd54e593ba42",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "367edc3c-6d6b-41ae-ba4a-051565646bda",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "285ef6b9-b976-4543-8da9-c14d93830dbe",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "54d1b1da-69c0-4992-9546-ebb3eec073e7",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "d58e3a33-6025-47b3-b350-0d8a62ea280f",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "9a0429b7-0764-4d9b-a4b1-0bdee3166e79"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "1f18906f-6518-48d4-8c76-ed2d08ea59cb",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_dce15417-c7a5-45ce-a6f9-c0240fe9bba0",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_5cb91aa1-f0b7-478c-849e-6503961379f7",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "cc1e997d-b6bb-4548-9902-51a0de6afeb4",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "3f347203-79d4-4a78-a61d-c455ff3be49e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "427ed9dd-ddb6-403f-affd-5bd3f9913252",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "4fd43f1e-7243-49fc-b0b8-2aeb1427c78f",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "784e26b2-4044-4e1c-9424-c829ac9a3d85",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "2085c2d1-d375-4fcd-9fdf-19603989c719",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "fee174d5-bd5d-4049-97c1-0d45e3aacc34",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "3191c42e-f693-4968-b276-fda2194362fe",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "dd08371b-e11d-4019-96e3-77d339471267",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "3e039a4a-9e73-444c-86a8-b7d381f8ff37",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "30e055bd-da5b-427e-bc6e-42d320c7685d",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "4851a180-318d-4438-88b6-ee1f3613e19d"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "1d9a0a43-e587-4a65-8a18-ea96f72938e3",
+        "partitions": [
+          {
+            "name": "LocalDateTable_5cb91aa1-f0b7-478c-849e-6503961379f7",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('visits'[time_of_record])), 1, 1), Date(Year(MAX('visits'[time_of_record])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "water_source",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "source_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "595f6c99-bc39-45aa-a719-dfa646aadc86",
+            "sourceColumn": "source_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "type_of_water_source",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a1c46c6a-54d1-4a78-94c8-b169f9da61f3",
+            "sourceColumn": "type_of_water_source",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "number_of_people_served",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "51e0e639-a6fd-4581-8652-0ac0c55653ac",
+            "sourceColumn": "number_of_people_served",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "0fbc1763-6e3a-41c2-ab53-7a0642830c7e",
+        "partitions": [
+          {
+            "name": "water_source",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\marti\\OneDrive\\Documents\\ALX Projects\\Data Analytics\\Visualising Data\\Md_water_services_data.xlsx\"), null, true),",
+                "    water_source_Sheet = Source{[Item=\"water_source\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(water_source_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"source_id\", type text}, {\"type_of_water_source\", type text}, {\"number_of_people_served\", Int64.Type}}),",
+                "    #\"Removed Duplicates\" = Table.Distinct(#\"Changed Type\")",
+                "in",
+                "    #\"Removed Duplicates\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "water_source_related_crime",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "crime_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dd2b8488-1fe6-4234-82c9-ec516d96dc3c",
+            "sourceColumn": "crime_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "time_of_incident",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "6c6288f7-1b20-4e3e-ae92-7e5211f0008a",
+            "sourceColumn": "time_of_incident",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_3fc8a83b-df62-483d-a4b2-d05e973d6dad"
+                },
+                "isDefault": true,
+                "relationship": "0792e44b-d9b2-483d-9e49-0bbce45848a5"
+              }
+            ]
+          },
+          {
+            "name": "loc_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d12463fe-bd64-4641-9581-b42309e368d8",
+            "sourceColumn": "loc_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "crime_type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f4572b39-33bd-47e1-8a57-e5a6d645c54c",
+            "sourceColumn": "crime_type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "victim_gender",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "342d770d-b2e7-434f-ad23-2f89d8e24ee8",
+            "sourceColumn": "victim_gender",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "hour_of_day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3d220de3-13ca-496c-a2c7-e79b24dd224f",
+            "sourceColumn": "hour_of_day",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "day_of_week",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "aab539b7-5588-4c9b-88e4-1bee409dbda2",
+            "sourceColumn": "day_of_week",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "victim",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    'water_source_related_crime'[victim_gender],",
+              "    \"F\",\"Female\",",
+              "    \"M\",\"Male\",",
+              "    \"C\",\"Child\",",
+              "    \"Unkonwn\"",
+              ")"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "67bad033-c282-43f2-87aa-ed033e4f0890",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "e83d39a2-377a-4c5f-8b4e-63f07074426d",
+        "partitions": [
+          {
+            "name": "water_source_related_crime",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\marti\\OneDrive\\Documents\\ALX Projects\\Data Analytics\\Visualising Data\\Md_water_services_data.xlsx\"), null, true),",
+                "    water_source_related_crime_Sheet = Source{[Item=\"water_source_related_crime\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(water_source_related_crime_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Column1\", Int64.Type}, {\"crime_id\", type text}, {\"time_of_incident\", type datetime}, {\"loc_id\", type text}, {\"crime_type\", type text}, {\"victim_gender\", type text}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Column1\"}),",
+                "    #\"Inserted Hour\" = Table.AddColumn(#\"Removed Columns\", \"Hour\", each Time.Hour([time_of_incident]), Int64.Type),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Inserted Hour\",{{\"Hour\", \"hour_of_day\"}}),",
+                "    #\"Inserted Week of Month\" = Table.AddColumn(#\"Renamed Columns\", \"Week of Month\", each Date.WeekOfMonth([time_of_incident]), Int64.Type),",
+                "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Inserted Week of Month\",{\"Week of Month\"}),",
+                "    #\"Inserted Day Name\" = Table.AddColumn(#\"Removed Columns1\", \"Day Name\", each Date.DayOfWeekName([time_of_incident]), type text),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Inserted Day Name\",{{\"Day Name\", \"day_of_week\"}})",
+                "in",
+                "    #\"Renamed Columns1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_3fc8a83b-df62-483d-a4b2-d05e973d6dad",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "f15f8ac1-2e24-4ec0-87e8-5eb0ed03e85f",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "88f152a0-fab8-41ad-a8b6-71b172239b8c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "ea638e0a-a919-490a-a4ef-77cdcd468fb6",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "9fcb4935-b30a-4969-93a2-12dadc32d4e5",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "8e87e64c-6896-4c2b-b941-cbc081f791b6",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "1edb1d7c-c66a-4ebc-b915-9eea0c34e1cb",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "b46fe612-75db-4613-96f7-79e09ee92928",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "eea23846-2844-4c6b-8717-085c5d7916b0",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "83c6ec0c-df3e-41e4-b3c0-efff519a4ca9",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "1363e70d-2c8f-46e2-a831-430ff685a0ed",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "6aa1c5c3-20d6-4b12-a329-d8614f31db1e",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "861eb3f4-b65e-485d-b2f0-ef2671902048"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "db835d6e-39a3-4a36-8572-c7d011cf5e8d",
+        "partitions": [
+          {
+            "name": "LocalDateTable_3fc8a83b-df62-483d-a4b2-d05e973d6dad",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('water_source_related_crime'[time_of_incident])), 1, 1), Date(Year(MAX('water_source_related_crime'[time_of_incident])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "well_pollution",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "source_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cb10f13c-092b-4d04-acd9-ce3b0b81d82d",
+            "sourceColumn": "source_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "9ff58e1a-c4fa-4aaf-b685-85a1390f106b",
+            "sourceColumn": "date",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_47bf2fdc-5c18-4ba3-9825-a66f69d22792"
+                },
+                "isDefault": true,
+                "relationship": "4af4e067-6b6a-4a9e-a2a8-82bb8a56de4d"
+              }
+            ]
+          },
+          {
+            "name": "description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7905ef72-8b9f-44b1-aea9-dc0e2d763b5f",
+            "sourceColumn": "description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "pollutant_ppm",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "89f820a9-29cf-4145-a9fc-8bc698d1fa62",
+            "sourceColumn": "pollutant_ppm",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "biological",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "f6c40171-169c-4a7d-ab99-a322f4278db0",
+            "sourceColumn": "biological",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "results",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a4fdce5d-0734-444c-b72b-a58a9b43bf3d",
+            "sourceColumn": "results",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "669eae2a-2e6b-4fbd-969f-f088af0d0221",
+        "partitions": [
+          {
+            "name": "well_pollution",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\marti\\OneDrive\\Documents\\ALX Projects\\Data Analytics\\Visualising Data\\Md_water_services_data.xlsx\"), null, true),",
+                "    well_pollution_Sheet = Source{[Item=\"well_pollution\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(well_pollution_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"source_id\", type text}, {\"date\", type datetime}, {\"description\", type text}, {\"pollutant_ppm\", type number}, {\"biological\", type number}, {\"results\", type text}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_47bf2fdc-5c18-4ba3-9825-a66f69d22792",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "01bc4ae5-f190-4d97-997b-3bd840cb313b",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "1fe8f30b-25d4-45b8-89d0-5c7316e38e5e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "250e30f6-9d80-4f2b-a0d5-fa7f64d7a96c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "76f747eb-c773-424a-ab18-c931e87783e3",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "33436f0d-7015-4a93-8b96-6ba4bd052a02",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "5eac77c0-41ef-47e6-89de-8adbddb727e2",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "db64dff9-4554-4569-8769-8093121b6dcf",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "5196a5b3-7ec7-44a6-bde7-ba59e4be0489",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "360b5212-7984-4d9a-a511-81fa23067c61",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "35711fa5-f316-4586-b55a-21f21382af01",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "20b5fba4-2717-4488-81fe-ed5c2c6302f9",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "99d63911-69eb-4f85-984e-76b965d61e90"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "fd3c2b7c-d863-4c9d-9aab-ee16cf77d45f",
+        "partitions": [
+          {
+            "name": "LocalDateTable_47bf2fdc-5c18-4ba3-9825-a66f69d22792",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('well_pollution'[date])), 1, 1), Date(Year(MAX('well_pollution'[date])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":3,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true,\"filterPaneHiddenInEditMode\":false},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "filters": "[]",
+  "layoutOptimization": 1,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "MD_Map9601956649646277.png",
+            "path": "MD_Map9601956649646277.png",
+            "type": 100
+          },
+          {
+            "name": "MD_Provinces5174933915936655.json",
+            "path": "MD_Provinces5174933915936655.json",
+            "type": 200
+          },
+          {
+            "name": "MD_Provinces6597736428417706.json",
+            "path": "MD_Provinces6597736428417706.json",
+            "type": 200
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Visit_Statistics",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "06b70cd8c0130e032dd3",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"7da576d8a7675e9ca90c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":359.58762886597935,\"z\":3000,\"width\":623.5051546391752,\"height\":330.9965635738831}},{\"id\":1,\"position\":{\"x\":0,\"y\":619,\"z\":3000,\"width\":324.00000000000006,\"height\":180}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Avg(Md_summary.time_in_queue)\"}],\"X\":[{\"queryRef\":\"Md_summary.number_of_people_served\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Md_summary\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"time_in_queue\"}},\"Function\":1},\"Name\":\"Avg(Md_summary.time_in_queue)\",\"NativeReferenceName\":\"Average of time_in_queue\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"number_of_people_served\"},\"Name\":\"Md_summary.number_of_people_served\",\"NativeReferenceName\":\"Sum of number_of_people_served\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Average time in queue by population served'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"8717560b768abb39aa40\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Md_summary\"}},\"Property\":\"visit_count\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Md_summary\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":1,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"visit_count\"}},\"Right\":{\"Literal\":{\"Value\":\"1L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":1}]",
+          "height": 331.00,
+          "width": 623.51,
+          "x": 640.00,
+          "y": 359.59,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"b0aad082986b0a2e00a8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":14.295532646048109,\"y\":9.896907216494846,\"z\":0,\"width\":504.7422680412371,\"height\":335.3951890034364}},{\"id\":1,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":324,\"height\":274}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Md_summary.day_of_week\",\"active\":true}],\"Y\":[{\"queryRef\":\"Avg(Md_summary.time_in_queue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Md_summary\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"day_of_week\"},\"Name\":\"Md_summary.day_of_week\",\"NativeReferenceName\":\"day_of_week\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"time_in_queue\"}},\"Function\":1},\"Name\":\"Avg(Md_summary.time_in_queue)\",\"NativeReferenceName\":\"Average of time_in_queue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"time_in_queue\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Average time in queue per day of the week'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 335.40,
+          "width": 504.74,
+          "x": 14.30,
+          "y": 9.90,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"f749d0bc028878b3a2b7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":14.295532646048109,\"y\":369.4845360824742,\"z\":2000,\"width\":532.233676975945,\"height\":328.7972508591065}},{\"id\":1,\"position\":{\"x\":0,\"y\":411,\"z\":2000,\"width\":324,\"height\":200.15702479338844}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(Md_summary.percent_child)\"},{\"queryRef\":\"Sum(Md_summary.percent_female)\"},{\"queryRef\":\"Sum(Md_summary.percent_male)\"}],\"Category\":[{\"queryRef\":\"Md_summary.day_of_week\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Md_summary\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"percent_child\"}},\"Function\":1},\"Name\":\"Sum(Md_summary.percent_child)\",\"NativeReferenceName\":\"Average of percent_child\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"percent_female\"}},\"Function\":1},\"Name\":\"Sum(Md_summary.percent_female)\",\"NativeReferenceName\":\"Average of percent_female\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"percent_male\"}},\"Function\":1},\"Name\":\"Sum(Md_summary.percent_male)\",\"NativeReferenceName\":\"Average of percent_male\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"day_of_week\"},\"Name\":\"Md_summary.day_of_week\",\"NativeReferenceName\":\"day_of_week\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"percent_child\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Average_of_time_in_queue'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Average time in Queue per Demgraphic'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 328.80,
+          "width": 532.23,
+          "x": 14.30,
+          "y": 369.48,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"f7b555045a40109d296b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":9.896907216494846,\"z\":1000,\"width\":623.5051546391752,\"height\":335.3951890034364}},{\"id\":1,\"position\":{\"x\":0,\"y\":223,\"z\":1000,\"width\":324.00000000000006,\"height\":180}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Md_summary.hour_of_day\",\"active\":true}],\"Y\":[{\"queryRef\":\"Avg(Md_summary.time_in_queue)\"}],\"Series\":[{\"queryRef\":\"Md_summary.day_of_week\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Md_summary\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"hour_of_day\"},\"Name\":\"Md_summary.hour_of_day\",\"NativeReferenceName\":\"Sum of hour_of_day\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"time_in_queue\"}},\"Function\":1},\"Name\":\"Avg(Md_summary.time_in_queue)\",\"NativeReferenceName\":\"Average of time_in_queue\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"day_of_week\"},\"Name\":\"Md_summary.day_of_week\",\"NativeReferenceName\":\"day_of_week\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"time_in_queue\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Day'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Average time in queue per hour of the day'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 335.40,
+          "width": 623.51,
+          "x": 640.00,
+          "y": 9.90,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "MCQ1",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"6ae4ba356d9a3ae46ba4\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Md_summary\"}},\"Property\":\"type_of_water_source\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Md_summary\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"type_of_water_source\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'shared_tap'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+      "height": 720.00,
+      "name": "9d6a7fb508ab94a8ce50",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"33daffabed8e02054d60\",\"layouts\":[{\"id\":0,\"position\":{\"x\":30.79037800687285,\"y\":15.395189003436425,\"z\":0,\"width\":269.41580756013747,\"height\":289.20962199312714}}],\"singleVisual\":{\"visualType\":\"shapeMap\",\"projections\":{\"Category\":[{\"queryRef\":\"Md_summary.province_name\"}],\"Tooltips\":[{\"queryRef\":\"Sum(Md_summary.percent_male)\"}],\"Value\":[{\"queryRef\":\"Sum(Md_summary.percent_female)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Md_summary\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"province_name\"},\"Name\":\"Md_summary.province_name\",\"NativeReferenceName\":\"province_name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"percent_male\"}},\"Function\":0},\"Name\":\"Sum(Md_summary.percent_male)\",\"NativeReferenceName\":\"Sum of percent_male\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"percent_female\"}},\"Function\":0},\"Name\":\"Sum(Md_summary.percent_female)\",\"NativeReferenceName\":\"Sum of percent_female\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'maxColor'\"}}}},\"nullColoringStrategy\":{\"strategy\":{\"expr\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}],\"shape\":[{\"properties\":{\"map\":{\"geoJson\":{\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'packaged'\"}}},\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'MD_Provinces.json'\"}}},\"content\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"MD_Provinces6597736428417706.json\"}}}}},\"projectionEnum\":{\"expr\":{\"Literal\":{\"Value\":\"'albersUsa'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 289.21,
+          "width": 269.42,
+          "x": 30.79,
+          "y": 15.40,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"60b3868e156c47ab1319\",\"layouts\":[{\"id\":0,\"position\":{\"x\":338.69415807560136,\"y\":15.395189003436425,\"z\":1000,\"width\":921.5120274914088,\"height\":493.7457044673539}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(Md_summary.percent_male)\"},{\"queryRef\":\"Sum(Md_summary.percent_female)\"},{\"queryRef\":\"Sum(Md_summary.percent_child)\"}],\"Category\":[{\"queryRef\":\"Md_summary.town_name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Md_summary\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"percent_male\"}},\"Function\":1},\"Name\":\"Sum(Md_summary.percent_male)\",\"NativeReferenceName\":\"Average of percent_male\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"percent_female\"}},\"Function\":1},\"Name\":\"Sum(Md_summary.percent_female)\",\"NativeReferenceName\":\"Average of percent_female\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"percent_child\"}},\"Function\":1},\"Name\":\"Sum(Md_summary.percent_child)\",\"NativeReferenceName\":\"Average of percent_child\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"town_name\"},\"Name\":\"Md_summary.town_name\",\"NativeReferenceName\":\"town_name\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"percent_male\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 493.75,
+          "width": 921.51,
+          "x": 338.69,
+          "y": 15.40,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Crime_Report",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "9f090b6c80360bbd5e55",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2517dda368300e40ad2d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":34.803625377643506,\"z\":3000,\"width\":366.5256797583082,\"height\":272.99093655589127,\"tabOrder\":1000}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0}}",
+          "height": 272.99,
+          "width": 366.53,
+          "x": 0.00,
+          "y": 34.80,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"51e62131394caa60dce7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":653.6555891238671,\"y\":299.0936555891239,\"z\":1000,\"width\":626.4652567975832,\"height\":420.90634441087616,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Md_queue_related_crime.province_name\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Md_queue_related_crime.Crime_id)\"}],\"Series\":[{\"queryRef\":\"Md_queue_related_crime.victim\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Md_queue_related_crime\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"province_name\"},\"Name\":\"Md_queue_related_crime.province_name\",\"NativeReferenceName\":\"province_name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Crime_id\"}},\"Function\":5},\"Name\":\"CountNonNull(Md_queue_related_crime.Crime_id)\",\"NativeReferenceName\":\"Crime_id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"victim\"},\"Name\":\"Md_queue_related_crime.victim\",\"NativeReferenceName\":\"victim\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Crime_id\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Number of Crimes '\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Number of Crimes Committed per Province'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 420.91,
+          "width": 626.47,
+          "x": 653.66,
+          "y": 299.09,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"7a56fe0951bd600ea38d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":949.0034364261168,\"y\":0,\"z\":4000,\"width\":330.9965635738831,\"height\":252.9209621993127,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(Md_queue_related_crime.crime_type)\"}],\"Category\":[{\"queryRef\":\"Md_queue_related_crime.victim\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Md_queue_related_crime\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"crime_type\"}},\"Function\":5},\"Name\":\"CountNonNull(Md_queue_related_crime.crime_type)\",\"NativeReferenceName\":\"Count of crime_type\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"victim\"},\"Name\":\"Md_queue_related_crime.victim\",\"NativeReferenceName\":\"Victims\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"crime_type\"}},\"Function\":5}}}]},\"columnProperties\":{\"Md_queue_related_crime.victim\":{\"displayName\":\"Victims\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Crimes commited'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 252.92,
+          "width": 331.00,
+          "x": 949.00,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"80b51ad8c074490a0226\",\"layouts\":[{\"id\":0,\"position\":{\"x\":40.24169184290031,\"y\":7.613293051359513,\"z\":3000,\"width\":301.2688821752266,\"height\":265.37764350453176,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"MD_Map9601956649646277.png\"}}}}}]}},\"parentGroupName\":\"2517dda368300e40ad2d\",\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 265.38,
+          "width": 301.27,
+          "x": 40.24,
+          "y": 7.61,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"94a6356c02e40366a1c4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":307.79456193353474,\"z\":0,\"width\":578.6102719033233,\"height\":412.20543806646526,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Md_queue_related_crime.crime_type\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Md_queue_related_crime.Crime_id)\"}],\"Series\":[{\"queryRef\":\"Md_queue_related_crime.victim\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Md_queue_related_crime\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"crime_type\"},\"Name\":\"Md_queue_related_crime.crime_type\",\"NativeReferenceName\":\"crime_type\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Crime_id\"}},\"Function\":5},\"Name\":\"CountNonNull(Md_queue_related_crime.Crime_id)\",\"NativeReferenceName\":\"Count of Crime_id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"victim\"},\"Name\":\"Md_queue_related_crime.victim\",\"NativeReferenceName\":\"victim\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Crime_id\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Victim'\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}}}}],\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Type of Crime'\"}}}}}],\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Number of Crimes committed'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Number of Crimes committed per demographic'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 412.21,
+          "width": 578.61,
+          "x": 0.00,
+          "y": 307.79,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"dbc727680e55b5e9bd30\",\"layouts\":[{\"id\":0,\"position\":{\"x\":401.3293051359517,\"y\":0,\"z\":2000,\"width\":476.3746223564955,\"height\":61.99395770392749,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"MAJI NDOGO CRIME SUMMARY REPORT\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Calibri\",\"fontSize\":\"20pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 61.99,
+          "width": 476.37,
+          "x": 401.33,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"eec2b6d8be5613080001\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":4000,\"width\":366.5256797583082,\"height\":253.41389728096678,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"shapeMap\",\"projections\":{\"Value\":[{\"queryRef\":\"CountNonNull(Md_queue_related_crime.Crime_id)\"}],\"Category\":[{\"queryRef\":\"Md_queue_related_crime.province_name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m1\",\"Entity\":\"Md_queue_related_crime\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m1\"}},\"Property\":\"Crime_id\"}},\"Function\":5},\"Name\":\"CountNonNull(Md_queue_related_crime.Crime_id)\",\"NativeReferenceName\":\"Count of Crime_id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m1\"}},\"Property\":\"province_name\"},\"Name\":\"Md_queue_related_crime.province_name\",\"NativeReferenceName\":\"province_name\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"map\":{\"geoJson\":{\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'packaged'\"}}},\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'MD_Provinces.json'\"}}},\"content\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"MD_Provinces5174933915936655.json\"}}}}},\"projectionEnum\":{\"expr\":{\"Literal\":{\"Value\":\"'albersUsa'\"}}}}}],\"dataPoint\":[{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'maxColor'\"}}}},\"nullColoringStrategy\":{\"strategy\":{\"expr\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'MAJI NDOGO'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}},\"parentGroupName\":\"2517dda368300e40ad2d\"}",
+          "filters": "[{\"name\":\"bc6c669d17535a3b9354\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Md_summary\"}},\"Property\":\"type_of_water_source\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}]",
+          "height": 253.41,
+          "width": 366.53,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 4000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "National",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "f229842054a6d1754570",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"08acd5e42a98233d52d7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":639.5166163141994,\"y\":320.8459214501511,\"z\":1000,\"width\":621.0271903323263,\"height\":399.154078549849,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Md_summary.type_of_water_source\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Md_summary.number_of_people_served)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Md_summary\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"type_of_water_source\"},\"Name\":\"Md_summary.type_of_water_source\",\"NativeReferenceName\":\"type_of_water_source\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0},\"Name\":\"Sum(Md_summary.number_of_people_served)\",\"NativeReferenceName\":\"Sum of number_of_people_served\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Population served by water sources'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"550dbe2076981bc400e1\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Md_summary\"}},\"Property\":\"visit_count\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Md_summary\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"visit_count\"}},\"Right\":{\"Literal\":{\"Value\":\"1L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":1}]",
+          "height": 399.15,
+          "width": 621.03,
+          "x": 639.52,
+          "y": 320.85,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"12fa4858e4eb00c70573\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":320.8459214501511,\"z\":0,\"width\":522.0543806646526,\"height\":399.154078549849,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Md_summary.location_type\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Md_summary.number_of_people_served)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Md_summary\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"location_type\"},\"Name\":\"Md_summary.location_type\",\"NativeReferenceName\":\"location_type\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0},\"Name\":\"Sum(Md_summary.number_of_people_served)\",\"NativeReferenceName\":\"Sum of number_of_people_served\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'National Population '\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"heading\":{\"expr\":{\"Literal\":{\"Value\":\"'Heading2'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"4603b8d18c220211ee32\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Md_summary\"}},\"Property\":\"visit_count\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Md_summary\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"visit_count\"}},\"Right\":{\"Literal\":{\"Value\":\"1L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":1}]",
+          "height": 399.15,
+          "width": 522.05,
+          "x": 0.00,
+          "y": 320.85,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"301aae966b00074d0deb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":34.803625377643506,\"z\":3000,\"width\":366.5256797583082,\"height\":272.99093655589127,\"tabOrder\":3000}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0}}",
+          "height": 272.99,
+          "width": 366.53,
+          "x": 0.00,
+          "y": 34.80,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"68444686623b77b2ddbd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":40.24169184290031,\"y\":7.613293051359513,\"z\":3000,\"width\":301.2688821752266,\"height\":265.37764350453176,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"MD_Map9601956649646277.png\"}}}}}]}},\"parentGroupName\":\"301aae966b00074d0deb\",\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 265.38,
+          "width": 301.27,
+          "x": 40.24,
+          "y": 7.61,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"6b4c7a56b81ad5348539\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":4000,\"width\":366.5256797583082,\"height\":253.41389728096678,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"shapeMap\",\"projections\":{\"Category\":[{\"queryRef\":\"Md_summary.province_name\"}],\"Value\":[{\"queryRef\":\"CountNonNull(Md_summary.type_of_water_source)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Md_summary\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"province_name\"},\"Name\":\"Md_summary.province_name\",\"NativeReferenceName\":\"province_name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"type_of_water_source\"}},\"Function\":5},\"Name\":\"CountNonNull(Md_summary.type_of_water_source)\",\"NativeReferenceName\":\"Count of type_of_water_source\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"map\":{\"geoJson\":{\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'packaged'\"}}},\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'MD_Provinces.json'\"}}},\"content\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"MD_Provinces5174933915936655.json\"}}}}},\"projectionEnum\":{\"expr\":{\"Literal\":{\"Value\":\"'albersUsa'\"}}}}}],\"dataPoint\":[{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'maxColor'\"}}}},\"nullColoringStrategy\":{\"strategy\":{\"expr\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'MAJI NDOGO'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}},\"parentGroupName\":\"301aae966b00074d0deb\"}",
+          "filters": "[{\"name\":\"bc6c669d17535a3b9354\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Md_summary\"}},\"Property\":\"type_of_water_source\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}]",
+          "height": 253.41,
+          "width": 366.53,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"9bc31707c96cda6bb503\",\"layouts\":[{\"id\":0,\"position\":{\"x\":807.0090634441088,\"y\":72.8700906344411,\"z\":4000,\"width\":473.1117824773414,\"height\":76.13293051359517,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Md_summary.province_name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Md_summary\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"province_name\"},\"Name\":\"Md_summary.province_name\",\"NativeReferenceName\":\"province_name\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.13,
+          "width": 473.11,
+          "x": 807.01,
+          "y": 72.87,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"e43ed7245ee9bb7189c9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":374.1389728096677,\"y\":0,\"z\":2000,\"width\":529.6676737160121,\"height\":69.60725075528701,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"MAJI NDOGO NATIONAL SUMMARY REPORT\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Calibri\",\"fontSize\":\"20pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 69.61,
+          "width": 529.67,
+          "x": 374.14,
+          "y": 0.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

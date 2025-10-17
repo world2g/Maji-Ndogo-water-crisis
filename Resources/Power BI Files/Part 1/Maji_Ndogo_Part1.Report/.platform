@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Maji_Ndogo_Part1"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "9bf66933-2852-49b1-ba0e-b5ce16ed8244"
+  }
+}

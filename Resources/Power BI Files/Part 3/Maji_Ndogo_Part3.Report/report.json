@@ -1,0 +1,870 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2},\"customTheme\":{\"name\":\"AccessibleDefault\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":9,\"bookmarks\":[{\"displayName\":\"Maji Ndogo Report\",\"name\":\"d33795ef111daa18f2b2\",\"explorationState\":{\"version\":\"1.3\",\"activeSection\":\"c0c96cb31292d587a4fe\",\"sections\":{\"c0c96cb31292d587a4fe\":{\"visualContainers\":{\"a30cc84d8eb4c2713d60\":{\"singleVisual\":{\"visualType\":\"textbox\",\"objects\":{}}},\"9b12bb3e1878d3ee86c9\":{\"singleVisual\":{\"visualType\":\"shape\",\"objects\":{}}},\"b7aadb39a63100f80f45\":{\"filters\":{\"byExpr\":[{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source\"}},\"Property\":\"type_of_water_source\"}},\"howCreated\":0},{\"type\":\"Advanced\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0}},\"howCreated\":0},{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"location\"}},\"Property\":\"location_type\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"objects\":{},\"orderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0}}}],\"activeProjections\":{\"Category\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source\"}},\"Property\":\"type_of_water_source\"}}]}}},\"8275060237e30cbd42e6\":{\"filters\":{\"byExpr\":[{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"province\"}},\"howCreated\":0},{\"type\":\"Advanced\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"improvement\"}},\"Function\":5}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"columnChart\",\"objects\":{},\"orderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"improvement\"}},\"Function\":5}}}],\"activeProjections\":{\"Category\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"province\"}}]}}},\"99cb1e48f9964b3c78ee\":{\"filters\":{\"byExpr\":[{\"name\":\"31448d4cc31e0c5c3868\",\"type\":\"Categorical\",\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"province\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"province\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"slicer\",\"objects\":{\"merge\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}]}},\"activeProjections\":{\"Values\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"province\"}}]}}},\"be48a57589cd4ba9ab01\":{\"filters\":{\"byExpr\":[{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"Aggregated_improvements\"}},\"howCreated\":0},{\"type\":\"Advanced\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"columnChart\",\"objects\":{},\"orderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5}}}],\"activeProjections\":{\"Category\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"Aggregated_improvements\"}}]}}},\"2691dcfb31cf06797401\":{\"singleVisual\":{\"visualType\":\"image\",\"objects\":{}}},\"c4265d6b6d3de927c774\":{\"singleVisual\":{\"visualType\":\"image\",\"objects\":{}}}}}},\"objects\":{\"merge\":{\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}},\"options\":{\"targetVisualNames\":[]}},{\"displayName\":\"Province Allocation\",\"name\":\"ff4a7733d105ed5b43ab\",\"explorationState\":{\"version\":\"1.3\",\"activeSection\":\"c0c96cb31292d587a4fe\",\"sections\":{\"c0c96cb31292d587a4fe\":{\"visualContainers\":{\"a30cc84d8eb4c2713d60\":{\"singleVisual\":{\"visualType\":\"textbox\",\"objects\":{}}},\"9b12bb3e1878d3ee86c9\":{\"singleVisual\":{\"visualType\":\"shape\",\"objects\":{}}},\"b7aadb39a63100f80f45\":{\"filters\":{\"byExpr\":[{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source\"}},\"Property\":\"type_of_water_source\"}},\"howCreated\":0},{\"type\":\"Advanced\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0}},\"howCreated\":0},{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"location\"}},\"Property\":\"location_type\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"objects\":{},\"orderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0}}}],\"activeProjections\":{\"Category\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source\"}},\"Property\":\"type_of_water_source\"}}]}}},\"8275060237e30cbd42e6\":{\"filters\":{\"byExpr\":[{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"province\"}},\"howCreated\":0},{\"type\":\"Advanced\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"improvement\"}},\"Function\":5}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"columnChart\",\"objects\":{},\"orderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"improvement\"}},\"Function\":5}}}],\"activeProjections\":{\"Category\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"province\"}}]}}},\"99cb1e48f9964b3c78ee\":{\"filters\":{\"byExpr\":[{\"name\":\"31448d4cc31e0c5c3868\",\"type\":\"Categorical\",\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"province\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"province\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"slicer\",\"objects\":{\"merge\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}]}},\"activeProjections\":{\"Values\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"province\"}}]}}},\"be48a57589cd4ba9ab01\":{\"filters\":{\"byExpr\":[{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"Aggregated_improvements\"}},\"howCreated\":0},{\"type\":\"Advanced\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"columnChart\",\"objects\":{},\"orderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5}}}],\"activeProjections\":{\"Category\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"Aggregated_improvements\"}}]}}},\"2691dcfb31cf06797401\":{\"singleVisual\":{\"visualType\":\"image\",\"objects\":{},\"display\":{\"mode\":\"hidden\"}}},\"c4265d6b6d3de927c774\":{\"singleVisual\":{\"visualType\":\"image\",\"objects\":{}}},\"8f3af658d11afb9552e7\":{\"filters\":{\"byExpr\":[{\"type\":\"Advanced\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source\"}},\"Property\":\"basic_water_level\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"card\",\"objects\":{}}},\"49127f3395193ca70d9f\":{\"filters\":{\"byExpr\":[{\"type\":\"Advanced\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"improvement_budget_cost\"}},\"Property\":\"Total Budget (USD)\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"card\",\"objects\":{}}},\"58ce7e2ac0383f13d081\":{\"filters\":{\"byExpr\":[{\"type\":\"Advanced\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source\"}},\"Property\":\"Formatted_change\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"card\",\"objects\":{}}},\"b49c15d5787859620cb6\":{\"filters\":{\"byExpr\":[{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"location\"}},\"Property\":\"province_name\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"shapeMap\",\"objects\":{}}},\"44b298fdc1baad7c4285\":{\"filters\":{\"byExpr\":[{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"improvement_budget_cost\"}},\"Property\":\"improvement\"}},\"howCreated\":0},{\"type\":\"Advanced\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"improvement_budget_cost\"}},\"Property\":\"total_cost\"}},\"Function\":0}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"objects\":{},\"orderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"improvement_budget_cost\"}},\"Property\":\"total_cost\"}},\"Function\":0}}}],\"activeProjections\":{\"Category\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"improvement_budget_cost\"}},\"Property\":\"improvement\"}}]},\"display\":{\"mode\":\"hidden\"}}},\"2438af84b8f28f783a70\":{\"filters\":{\"byExpr\":[{\"type\":\"Advanced\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"province_budget_cost\"}},\"Property\":\"total_price\"}},\"Function\":5}},\"howCreated\":0},{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"province_budget_cost\"}},\"Property\":\"province\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"barChart\",\"objects\":{},\"orderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"province_budget_cost\"}},\"Property\":\"total_price\"}},\"Function\":5}}}]}}}}},\"objects\":{\"merge\":{\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}},\"options\":{\"targetVisualNames\":[\"2691dcfb31cf06797401\"]}},{\"displayName\":\"Improvent Allocation\",\"name\":\"f49e3f4b8ff8e02738a6\",\"explorationState\":{\"version\":\"1.3\",\"activeSection\":\"c0c96cb31292d587a4fe\",\"sections\":{\"c0c96cb31292d587a4fe\":{\"visualContainers\":{\"a30cc84d8eb4c2713d60\":{\"singleVisual\":{\"visualType\":\"textbox\",\"objects\":{}}},\"9b12bb3e1878d3ee86c9\":{\"singleVisual\":{\"visualType\":\"shape\",\"objects\":{}}},\"b7aadb39a63100f80f45\":{\"filters\":{\"byExpr\":[{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source\"}},\"Property\":\"type_of_water_source\"}},\"howCreated\":0},{\"type\":\"Advanced\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0}},\"howCreated\":0},{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"location\"}},\"Property\":\"location_type\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"objects\":{},\"orderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0}}}],\"activeProjections\":{\"Category\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source\"}},\"Property\":\"type_of_water_source\"}}]}}},\"8275060237e30cbd42e6\":{\"filters\":{\"byExpr\":[{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"province\"}},\"howCreated\":0},{\"type\":\"Advanced\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"improvement\"}},\"Function\":5}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"columnChart\",\"objects\":{},\"orderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"improvement\"}},\"Function\":5}}}],\"activeProjections\":{\"Category\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"province\"}}]}}},\"99cb1e48f9964b3c78ee\":{\"filters\":{\"byExpr\":[{\"name\":\"31448d4cc31e0c5c3868\",\"type\":\"Categorical\",\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"province\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"province\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"slicer\",\"objects\":{\"merge\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}]}},\"activeProjections\":{\"Values\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"province\"}}]}}},\"be48a57589cd4ba9ab01\":{\"filters\":{\"byExpr\":[{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"Aggregated_improvements\"}},\"howCreated\":0},{\"type\":\"Advanced\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"columnChart\",\"objects\":{},\"orderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5}}}],\"activeProjections\":{\"Category\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"Aggregated_improvements\"}}]}}},\"2691dcfb31cf06797401\":{\"singleVisual\":{\"visualType\":\"image\",\"objects\":{}}},\"c4265d6b6d3de927c774\":{\"singleVisual\":{\"visualType\":\"image\",\"objects\":{},\"display\":{\"mode\":\"hidden\"}}},\"8f3af658d11afb9552e7\":{\"filters\":{\"byExpr\":[{\"type\":\"Advanced\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source\"}},\"Property\":\"basic_water_level\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"card\",\"objects\":{}}},\"49127f3395193ca70d9f\":{\"filters\":{\"byExpr\":[{\"type\":\"Advanced\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"improvement_budget_cost\"}},\"Property\":\"Total Budget (USD)\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"card\",\"objects\":{}}},\"58ce7e2ac0383f13d081\":{\"filters\":{\"byExpr\":[{\"type\":\"Advanced\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source\"}},\"Property\":\"Formatted_change\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"card\",\"objects\":{}}},\"b49c15d5787859620cb6\":{\"filters\":{\"byExpr\":[{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"location\"}},\"Property\":\"province_name\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"shapeMap\",\"objects\":{}}},\"44b298fdc1baad7c4285\":{\"filters\":{\"byExpr\":[{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"improvement_budget_cost\"}},\"Property\":\"improvement\"}},\"howCreated\":0},{\"type\":\"Advanced\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"improvement_budget_cost\"}},\"Property\":\"total_cost\"}},\"Function\":0}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"objects\":{},\"orderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"improvement_budget_cost\"}},\"Property\":\"total_cost\"}},\"Function\":0}}}],\"activeProjections\":{\"Category\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"improvement_budget_cost\"}},\"Property\":\"improvement\"}}]}}},\"2438af84b8f28f783a70\":{\"filters\":{\"byExpr\":[{\"type\":\"Advanced\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"province_budget_cost\"}},\"Property\":\"total_price\"}},\"Function\":5}},\"howCreated\":0},{\"type\":\"Categorical\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"province_budget_cost\"}},\"Property\":\"province\"}},\"howCreated\":0}]},\"singleVisual\":{\"visualType\":\"barChart\",\"objects\":{},\"orderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"province_budget_cost\"}},\"Property\":\"total_price\"}},\"Function\":5}}}],\"display\":{\"mode\":\"hidden\"}}}}}},\"objects\":{\"merge\":{\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}},\"options\":{\"targetVisualNames\":[]}}],\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true,\"filterPaneHiddenInEditMode\":false},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "filters": "[]",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "646f9d6d01a722ef9c8a",
+      "config": "{}",
+      "name": "35b9e35beb14cff3a0e0",
+      "parameters": "[{\"name\":\"b34ed4f9f1b44e6c6e37\",\"boundFilter\":\"61b5493f71614775436a\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"improvement\"}},\"asAggregation\":true}]",
+      "type": 1
+    },
+    {
+      "boundSection": "292818434e3ec97b1ff0",
+      "config": "{}",
+      "name": "64c89e40449702a00ac1",
+      "parameters": "[{\"name\":\"c3a9febaef1480bd107f\",\"boundFilter\":\"ec28ed2bb2639a245d17\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"improvement\"}},\"asAggregation\":true}]",
+      "type": 1
+    },
+    {
+      "boundSection": "30f8d0f010b725c1abec",
+      "config": "{}",
+      "name": "7d42ecd1e21b42e7570d",
+      "parameters": "[{\"name\":\"8726e587a56f50bc4cd9\",\"boundFilter\":\"e3cda73f0eff31e2776f\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"improvement\"}},\"asAggregation\":true}]",
+      "type": 1
+    },
+    {
+      "boundSection": "2818f345d08d5dc7bf75",
+      "config": "{}",
+      "name": "c9dd2e0a3224d32be627",
+      "parameters": "[{\"name\":\"8c0d960e776576931e58\",\"boundFilter\":\"9f85b654ece261454bb7\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"improvement\"}},\"asAggregation\":true}]",
+      "type": 1
+    },
+    {
+      "boundSection": "a4b2193ff0f2d46d7425",
+      "config": "{}",
+      "name": "e695480dfe8a571b9f37",
+      "parameters": "[{\"name\":\"98f37caf7d091215e0f5\",\"boundFilter\":\"15334432775308859259\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"improvement\"}},\"asAggregation\":true}]",
+      "type": 1
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "AccessibleDefault",
+            "path": "BuiltInThemes/AccessibleDefault.json",
+            "type": 201
+          },
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "MD_Provinces06739857222921053.json",
+            "path": "MD_Provinces06739857222921053.json",
+            "type": 200
+          },
+          {
+            "name": "MD_Provinces6933658158161689.json",
+            "path": "MD_Provinces6933658158161689.json",
+            "type": 200
+          },
+          {
+            "name": "Toggle_button_improvement8132049039666256.png",
+            "path": "Toggle_button_improvement8132049039666256.png",
+            "type": 100
+          },
+          {
+            "name": "Toggle_button_province1864932614446897.png",
+            "path": "Toggle_button_province1864932614446897.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "P3_Akatsi_Report",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"08b3772e4930cfaa202c\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"province\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"province\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Akatsi'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}},{\"name\":\"9f85b654ece261454bb7\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"improvement\"}},\"type\":\"Categorical\",\"howCreated\":5}]",
+      "height": 720.00,
+      "name": "2818f345d08d5dc7bf75",
+      "ordinal": 7,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"547edf26650a06080b51\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20.893470790378007,\"y\":54.982817869415804,\"z\":7000,\"width\":410.1718213058419,\"height\":313.40206185567007,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"project_progress.Aggregated_improvements\",\"active\":true}],\"Y\":[{\"queryRef\":\"project_progress.budgeted_improvement_cost average per province_name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"},\"Name\":\"project_progress.Aggregated_improvements\",\"NativeReferenceName\":\"Aggregated_improvements\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"},\"Name\":\"project_progress.budgeted_improvement_cost average per province_name\",\"NativeReferenceName\":\"budgeted_improvement_cost average per province_name\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Water Source '\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Cost in USD'\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Improvement Costs on Water Sources'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 313.40,
+          "width": 410.17,
+          "x": 20.89,
+          "y": 54.98,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"7a048884e97ca65b2fd6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":118.76288659793813,\"y\":0,\"z\":6000,\"width\":313.40206185567007,\"height\":56.08247422680412,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"AKATSI REPORT \",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Arial Black\",\"fontSize\":\"18pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 56.08,
+          "width": 313.40,
+          "x": 118.76,
+          "y": 0.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"90a0443e5f2dd3578be1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":855.7714285714286,\"y\":19.504761904761907,\"z\":2000,\"width\":380.34285714285716,\"height\":185.2952380952381,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"project_progress.town\"},{\"queryRef\":\"water_source.number_of_people_served\"},{\"queryRef\":\"project_progress.improvement\"},{\"queryRef\":\"project_progress.budgeted_improvement_cost average per province_name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0},{\"Name\":\"w\",\"Entity\":\"water_source\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"},\"Name\":\"project_progress.budgeted_improvement_cost average per province_name\",\"NativeReferenceName\":\"Budget\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"town\"},\"Name\":\"project_progress.town\",\"NativeReferenceName\":\"town\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"improvement\"}},\"Function\":5},\"Name\":\"project_progress.improvement\",\"NativeReferenceName\":\"Count of improvement\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0},\"Name\":\"water_source.number_of_people_served\",\"NativeReferenceName\":\"Population\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0}}}]},\"columnProperties\":{\"project_progress.budgeted_improvement_cost average per province_name\":{\"displayName\":\"Budget\"},\"water_source.number_of_people_served\":{\"displayName\":\"Population\"}},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 185.30,
+          "width": 380.34,
+          "x": 855.77,
+          "y": 19.50,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"96f2a289ef1735b3534c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20.893470790378007,\"y\":393.67697594501715,\"z\":1000,\"width\":745.5670103092783,\"height\":294.7079037800687,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"project_progress.Aggregated_improvements\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(project_progress.Aggregated_improvements)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"},\"Name\":\"project_progress.Aggregated_improvements\",\"NativeReferenceName\":\"Aggregated_improvements\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5},\"Name\":\"CountNonNull(project_progress.Aggregated_improvements)\",\"NativeReferenceName\":\"Count of Aggregated_improvements\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Improvements'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 294.71,
+          "width": 745.57,
+          "x": 20.89,
+          "y": 393.68,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"b2880ed0dc4b2de25427\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":5000,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"b9b7b35f4b4ee53e44d6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":809.447619047619,\"y\":487.6190476190476,\"z\":4000,\"width\":430.32380952380953,\"height\":136.53333333333333,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"project_progress.Akatsi Provincial Budget (USD)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Akatsi Provincial Budget (USD)\"},\"Name\":\"project_progress.Akatsi Provincial Budget (USD)\",\"NativeReferenceName\":\"Akatsi Provincial Budget (USD)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Akatsi Provincial Budget (USD)\"}}}]},\"columnProperties\":{\"improvement_budget_cost.Total Budget (USD)\":{\"formatString\":null},\"project_progress.Provincial Budget (USD)\":{\"formatString\":null},\"project_progress.Kilimani Provincial Budget (USD)\":{\"formatString\":null},\"project_progress.Akatsi Provincial Budget (USD)\":{\"formatString\":\"\\\\$#,0;(\\\\$#,0);\\\\$#,0\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Budget (USD)'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 136.53,
+          "width": 430.32,
+          "x": 809.45,
+          "y": 487.62,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"c0f7fa5b56cfa73de299\",\"layouts\":[{\"id\":0,\"position\":{\"x\":431.54285714285714,\"y\":54.857142857142854,\"z\":0,\"width\":404.7238095238095,\"height\":331.5809523809524,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"location.location_type\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(project_progress.budgeted_improvement_cost)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0},{\"Name\":\"l\",\"Entity\":\"location\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"location_type\"},\"Name\":\"location.location_type\",\"NativeReferenceName\":\"location_type\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost\"}},\"Function\":0},\"Name\":\"Sum(project_progress.budgeted_improvement_cost)\",\"NativeReferenceName\":\"Sum of budgeted_improvement_cost\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Budgeted Improvements'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 331.58,
+          "width": 404.72,
+          "x": 431.54,
+          "y": 54.86,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"e8aa1457f46fe46a5180\",\"layouts\":[{\"id\":0,\"position\":{\"x\":865.5238095238095,\"y\":241.37142857142857,\"z\":3000,\"width\":360.83809523809526,\"height\":184.07619047619048,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"project_progress.Aggregated_improvements\"},{\"queryRef\":\"Count(project_progress.Aggregated_improvements)\"},{\"queryRef\":\"Sum(project_progress.budgeted_improvement_cost)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"},\"Name\":\"project_progress.Aggregated_improvements\",\"NativeReferenceName\":\"Aggregated_improvements\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5},\"Name\":\"Count(project_progress.Aggregated_improvements)\",\"NativeReferenceName\":\"Qty\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost\"}},\"Function\":0},\"Name\":\"Sum(project_progress.budgeted_improvement_cost)\",\"NativeReferenceName\":\"Budget\"}]},\"columnProperties\":{\"Count(project_progress.Aggregated_improvements)\":{\"displayName\":\"Qty\"},\"Sum(project_progress.budgeted_improvement_cost)\":{\"displayName\":\"Budget\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"120.87011516999625D\"}}}},\"selector\":{\"metadata\":\"Sum(project_progress.budgeted_improvement_cost)\"}}]}}}",
+          "filters": "[]",
+          "height": 184.08,
+          "width": 360.84,
+          "x": 865.52,
+          "y": 241.37,
+          "z": 3000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "P3_Amanzi_Report",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"7548ab2e9d44b9a324ce\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"province\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"province\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Amanzi'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}},{\"name\":\"ec28ed2bb2639a245d17\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"improvement\"}},\"type\":\"Categorical\",\"howCreated\":5}]",
+      "height": 720.00,
+      "name": "292818434e3ec97b1ff0",
+      "ordinal": 9,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0a66e66d689a4cf95946\",\"layouts\":[{\"id\":0,\"position\":{\"x\":828.952380952381,\"y\":19.504761904761907,\"z\":2000,\"width\":410.81904761904764,\"height\":216.9904761904762,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"project_progress.town\"},{\"queryRef\":\"water_source.number_of_people_served\"},{\"queryRef\":\"project_progress.improvement\"},{\"queryRef\":\"project_progress.budgeted_improvement_cost average per province_name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0},{\"Name\":\"w\",\"Entity\":\"water_source\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"},\"Name\":\"project_progress.budgeted_improvement_cost average per province_name\",\"NativeReferenceName\":\"Budget\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"town\"},\"Name\":\"project_progress.town\",\"NativeReferenceName\":\"town\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"improvement\"}},\"Function\":5},\"Name\":\"project_progress.improvement\",\"NativeReferenceName\":\"Count of improvement\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0},\"Name\":\"water_source.number_of_people_served\",\"NativeReferenceName\":\"Population\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0}}}]},\"columnProperties\":{\"project_progress.budgeted_improvement_cost average per province_name\":{\"displayName\":\"Budget\"},\"water_source.number_of_people_served\":{\"displayName\":\"Population\"}},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 216.99,
+          "width": 410.82,
+          "x": 828.95,
+          "y": 19.50,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"2b4c3610595b60263366\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20.723809523809525,\"y\":54.857142857142854,\"z\":7000,\"width\":410.81904761904764,\"height\":331.5809523809524,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"project_progress.budgeted_improvement_cost average per province_name\"}],\"Category\":[{\"queryRef\":\"project_progress.Aggregated_improvements\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"},\"Name\":\"project_progress.budgeted_improvement_cost average per province_name\",\"NativeReferenceName\":\"budgeted_improvement_cost average per province_name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"},\"Name\":\"project_progress.Aggregated_improvements\",\"NativeReferenceName\":\"Aggregated_improvements\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Water Source '\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Cost in USD'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Improvement Costs on Water Sources'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 331.58,
+          "width": 410.82,
+          "x": 20.72,
+          "y": 54.86,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"8270d3aa031daa2ed47a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":118.76288659793813,\"y\":0,\"z\":6000,\"width\":313.40206185567007,\"height\":56.08247422680412,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"AMANZI REPORT \",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Arial Black\",\"fontSize\":\"18pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 56.08,
+          "width": 313.40,
+          "x": 118.76,
+          "y": 0.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"949cf30ec40a5436b45d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":466.8952380952381,\"y\":54.857142857142854,\"z\":0,\"width\":346.20952380952383,\"height\":304.76190476190476,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"location.location_type\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(project_progress.budgeted_improvement_cost)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0},{\"Name\":\"l\",\"Entity\":\"location\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"location_type\"},\"Name\":\"location.location_type\",\"NativeReferenceName\":\"location_type\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost\"}},\"Function\":0},\"Name\":\"Sum(project_progress.budgeted_improvement_cost)\",\"NativeReferenceName\":\"Sum of budgeted_improvement_cost\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Budgeted Improvements'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 304.76,
+          "width": 346.21,
+          "x": 466.90,
+          "y": 54.86,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"9ab5f55873787444dfbd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":796.0380952380953,\"y\":497.37142857142857,\"z\":4000,\"width\":443.73333333333335,\"height\":136.53333333333333,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"project_progress.Amanzi Provincial Budget (USD)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Amanzi Provincial Budget (USD)\"},\"Name\":\"project_progress.Amanzi Provincial Budget (USD)\",\"NativeReferenceName\":\"Amanzi Provincial Budget (USD)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Amanzi Provincial Budget (USD)\"}}}]},\"columnProperties\":{\"improvement_budget_cost.Total Budget (USD)\":{\"formatString\":null},\"project_progress.Provincial Budget (USD)\":{\"formatString\":null},\"project_progress.Kilimani Provincial Budget (USD)\":{\"formatString\":null},\"project_progress.Akatsi Provincial Budget (USD)\":{\"formatString\":null},\"project_progress.Hawassa Provincial Budget (USD)\":{\"formatString\":null},\"project_progress.Amanzi Provincial Budget (USD)\":{\"formatString\":\"\\\\$#,0;(\\\\$#,0);\\\\$#,0\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Budget (USD)'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 136.53,
+          "width": 443.73,
+          "x": 796.04,
+          "y": 497.37,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"9dafda42005c8c2eb4cb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":5000,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"b65eec390daaa891984f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":854.552380952381,\"y\":266.9714285714286,\"z\":3000,\"width\":360.83809523809526,\"height\":185.2952380952381,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"project_progress.Aggregated_improvements\"},{\"queryRef\":\"Count(project_progress.Aggregated_improvements)\"},{\"queryRef\":\"Sum(project_progress.budgeted_improvement_cost)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"},\"Name\":\"project_progress.Aggregated_improvements\",\"NativeReferenceName\":\"Aggregated_improvements\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5},\"Name\":\"Count(project_progress.Aggregated_improvements)\",\"NativeReferenceName\":\"Qty\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost\"}},\"Function\":0},\"Name\":\"Sum(project_progress.budgeted_improvement_cost)\",\"NativeReferenceName\":\"Budget\"}]},\"columnProperties\":{\"Count(project_progress.Aggregated_improvements)\":{\"displayName\":\"Qty\"},\"Sum(project_progress.budgeted_improvement_cost)\":{\"displayName\":\"Budget\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"112.22857142857143D\"}}}},\"selector\":{\"metadata\":\"Sum(project_progress.budgeted_improvement_cost)\"}}]}}}",
+          "filters": "[]",
+          "height": 185.30,
+          "width": 360.84,
+          "x": 854.55,
+          "y": 266.97,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"bee09f31178d3161f4fe\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20.893470790378007,\"y\":393.67697594501715,\"z\":1000,\"width\":745.5670103092783,\"height\":294.7079037800687,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"project_progress.Aggregated_improvements\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(project_progress.Aggregated_improvements)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"},\"Name\":\"project_progress.Aggregated_improvements\",\"NativeReferenceName\":\"Aggregated_improvements\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5},\"Name\":\"CountNonNull(project_progress.Aggregated_improvements)\",\"NativeReferenceName\":\"Count of Aggregated_improvements\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Improvemnts'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 294.71,
+          "width": 745.57,
+          "x": 20.89,
+          "y": 393.68,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "P3_Hawassa_Report",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"670ad84f533d5ea96acb\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"province\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"province\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Hawassa'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}},{\"name\":\"e3cda73f0eff31e2776f\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"improvement\"}},\"type\":\"Categorical\",\"howCreated\":5}]",
+      "height": 720.00,
+      "name": "30f8d0f010b725c1abec",
+      "ordinal": 8,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"030328d54e11db8463a1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20.893470790378007,\"y\":393.67697594501715,\"z\":1000,\"width\":745.5670103092783,\"height\":294.7079037800687,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"project_progress.Aggregated_improvements\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(project_progress.Aggregated_improvements)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"},\"Name\":\"project_progress.Aggregated_improvements\",\"NativeReferenceName\":\"Aggregated_improvements\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5},\"Name\":\"CountNonNull(project_progress.Aggregated_improvements)\",\"NativeReferenceName\":\"Count of Aggregated_improvements\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Improvements'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 294.71,
+          "width": 745.57,
+          "x": 20.89,
+          "y": 393.68,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"0d84f1a3b7723e1d5cad\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":5000,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"1351f849c8b9fcc23d8a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":463.23809523809524,\"y\":68.26666666666667,\"z\":0,\"width\":353.5238095238095,\"height\":304.76190476190476,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"location.location_type\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(project_progress.budgeted_improvement_cost)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0},{\"Name\":\"l\",\"Entity\":\"location\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"location_type\"},\"Name\":\"location.location_type\",\"NativeReferenceName\":\"location_type\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost\"}},\"Function\":0},\"Name\":\"Sum(project_progress.budgeted_improvement_cost)\",\"NativeReferenceName\":\"Sum of budgeted_improvement_cost\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Budgeted Improvements'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 304.76,
+          "width": 353.52,
+          "x": 463.24,
+          "y": 68.27,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"1f69382d96091749e85d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":828.952380952381,\"y\":28.038095238095238,\"z\":2000,\"width\":410.81904761904764,\"height\":216.9904761904762,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"project_progress.town\"},{\"queryRef\":\"water_source.number_of_people_served\"},{\"queryRef\":\"project_progress.improvement\"},{\"queryRef\":\"project_progress.budgeted_improvement_cost average per province_name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0},{\"Name\":\"w\",\"Entity\":\"water_source\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"},\"Name\":\"project_progress.budgeted_improvement_cost average per province_name\",\"NativeReferenceName\":\"Budget\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"town\"},\"Name\":\"project_progress.town\",\"NativeReferenceName\":\"town\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"improvement\"}},\"Function\":5},\"Name\":\"project_progress.improvement\",\"NativeReferenceName\":\"Count of improvement\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0},\"Name\":\"water_source.number_of_people_served\",\"NativeReferenceName\":\"Population\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0}}}]},\"columnProperties\":{\"project_progress.budgeted_improvement_cost average per province_name\":{\"displayName\":\"Budget\"},\"water_source.number_of_people_served\":{\"displayName\":\"Population\"}},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 216.99,
+          "width": 410.82,
+          "x": 828.95,
+          "y": 28.04,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"23cbe2dcab1d888a8833\",\"layouts\":[{\"id\":0,\"position\":{\"x\":786.2857142857143,\"y\":487.6190476190476,\"z\":4000,\"width\":444.95238095238096,\"height\":136.53333333333333,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"project_progress.Hawassa Provincial Budget (USD)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Hawassa Provincial Budget (USD)\"},\"Name\":\"project_progress.Hawassa Provincial Budget (USD)\",\"NativeReferenceName\":\"Hawassa Provincial Budget (USD)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Hawassa Provincial Budget (USD)\"}}}]},\"columnProperties\":{\"improvement_budget_cost.Total Budget (USD)\":{\"formatString\":null},\"project_progress.Provincial Budget (USD)\":{\"formatString\":null},\"project_progress.Kilimani Provincial Budget (USD)\":{\"formatString\":null},\"project_progress.Akatsi Provincial Budget (USD)\":{\"formatString\":null},\"project_progress.Hawassa Provincial Budget (USD)\":{\"formatString\":\"\\\\$#,0;(\\\\$#,0);\\\\$#,0\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Budget (USD)'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 136.53,
+          "width": 444.95,
+          "x": 786.29,
+          "y": 487.62,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"4807c071a1525b4cf956\",\"layouts\":[{\"id\":0,\"position\":{\"x\":861.8666666666667,\"y\":275.5047619047619,\"z\":3000,\"width\":344.9904761904762,\"height\":167.0095238095238,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"project_progress.Aggregated_improvements\"},{\"queryRef\":\"Count(project_progress.Aggregated_improvements)\"},{\"queryRef\":\"Sum(project_progress.budgeted_improvement_cost)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"},\"Name\":\"project_progress.Aggregated_improvements\",\"NativeReferenceName\":\"Aggregated_improvements\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5},\"Name\":\"Count(project_progress.Aggregated_improvements)\",\"NativeReferenceName\":\"Qty\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost\"}},\"Function\":0},\"Name\":\"Sum(project_progress.budgeted_improvement_cost)\",\"NativeReferenceName\":\"Budget\"}]},\"columnProperties\":{\"Count(project_progress.Aggregated_improvements)\":{\"displayName\":\"Qty\"},\"Sum(project_progress.budgeted_improvement_cost)\":{\"displayName\":\"Budget\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"109.7904761904762D\"}}}},\"selector\":{\"metadata\":\"Sum(project_progress.budgeted_improvement_cost)\"}}]}}}",
+          "filters": "[]",
+          "height": 167.01,
+          "width": 344.99,
+          "x": 861.87,
+          "y": 275.50,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"c946cbab775cbd922def\",\"layouts\":[{\"id\":0,\"position\":{\"x\":118.76288659793813,\"y\":0,\"z\":6000,\"width\":313.40206185567007,\"height\":56.08247422680412,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"HAWASSA REPORT \",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Arial Black\",\"fontSize\":\"18pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 56.08,
+          "width": 313.40,
+          "x": 118.76,
+          "y": 0.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"d40072bb873b82b92de8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20.723809523809525,\"y\":54.857142857142854,\"z\":7000,\"width\":410.81904761904764,\"height\":331.5809523809524,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"project_progress.Aggregated_improvements\",\"active\":true}],\"Y\":[{\"queryRef\":\"project_progress.budgeted_improvement_cost average per province_name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"},\"Name\":\"project_progress.budgeted_improvement_cost average per province_name\",\"NativeReferenceName\":\"budgeted_improvement_cost average per province_name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"},\"Name\":\"project_progress.Aggregated_improvements\",\"NativeReferenceName\":\"Aggregated_improvements\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Water Source '\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Cost in USD'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Improvement Costs on Water Sources'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 331.58,
+          "width": 410.82,
+          "x": 20.72,
+          "y": 54.86,
+          "z": 7000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Crime Data",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "5631578bae02e895a4a0",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"14c372fd004ed18dc799\",\"layouts\":[{\"id\":0,\"position\":{\"x\":13.40952380952381,\"y\":360.83809523809526,\"z\":2000,\"width\":769.2190476190476,\"height\":359.6190476190476,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(water_source_related_crime.crime_type)\"}],\"Series\":[{\"queryRef\":\"water_source_related_crime.victim_gender\"}],\"Category\":[{\"queryRef\":\"water_source_related_crime.Hour of the Day\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"water_source_related_crime\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"crime_type\"}},\"Function\":5},\"Name\":\"CountNonNull(water_source_related_crime.crime_type)\",\"NativeReferenceName\":\"Count of crime_type\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"victim_gender\"},\"Name\":\"water_source_related_crime.victim_gender\",\"NativeReferenceName\":\"victim_gender\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Hour of the Day\"},\"Name\":\"water_source_related_crime.Hour of the Day\",\"NativeReferenceName\":\"Hour of the Day\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"crime_type\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"axisType\":{\"expr\":{\"Literal\":{\"Value\":\"'Scalar'\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Time of Day ( 24hr Time Format )'\"}}},\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"25L\"}}},\"preferredCategoryWidth\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"f831d0fe60e9564429df\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source_related_crime\"}},\"Property\":\"victim_gender\"}},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 359.62,
+          "width": 769.22,
+          "x": 13.41,
+          "y": 360.84,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"ab5a5a5453140583d725\",\"layouts\":[{\"id\":0,\"position\":{\"x\":782.955326460481,\"y\":0,\"z\":3000,\"width\":497.0446735395189,\"height\":374.9828178694158,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"water_source_related_crime.day_of_week\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(water_source_related_crime.crime_type)\"}],\"Series\":[{\"queryRef\":\"water_source_related_crime.victim_gender\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"water_source_related_crime\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"day_of_week\"},\"Name\":\"water_source_related_crime.day_of_week\",\"NativeReferenceName\":\"day_of_week\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"crime_type\"}},\"Function\":5},\"Name\":\"CountNonNull(water_source_related_crime.crime_type)\",\"NativeReferenceName\":\"Count of crime_type\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"victim_gender\"},\"Name\":\"water_source_related_crime.victim_gender\",\"NativeReferenceName\":\"victim_gender\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"crime_type\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"name\":\"70d87141e738855a15c5\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source_related_crime\"}},\"Property\":\"victim_gender\"}},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 374.98,
+          "width": 497.04,
+          "x": 782.96,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"c024731c7e69cb87f0a8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":371.68384879725085,\"y\":0,\"z\":1000,\"width\":411.2714776632302,\"height\":359.58762886597935,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"water_source_related_crime.crime_type\",\"active\":true}],\"Series\":[{\"queryRef\":\"water_source_related_crime.victim_gender\"}],\"Y\":[{\"queryRef\":\"CountNonNull(water_source_related_crime.crime_type)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"water_source_related_crime\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"crime_type\"},\"Name\":\"water_source_related_crime.crime_type\",\"NativeReferenceName\":\"crime_type\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"victim_gender\"},\"Name\":\"water_source_related_crime.victim_gender\",\"NativeReferenceName\":\"victim_gender\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"crime_type\"}},\"Function\":5},\"Name\":\"CountNonNull(water_source_related_crime.crime_type)\",\"NativeReferenceName\":\"Count of crime_type\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"crime_type\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"name\":\"f7442cdcddbeb304c863\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source_related_crime\"}},\"Property\":\"victim_gender\"}},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 359.59,
+          "width": 411.27,
+          "x": 371.68,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"f5d12326df1c2af89965\",\"layouts\":[{\"id\":0,\"position\":{\"x\":783,\"y\":375,\"width\":497,\"height\":345,\"z\":4000,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(water_source_related_crime.crime_type)\"}],\"Category\":[{\"queryRef\":\"location.province_name\",\"active\":true}],\"Series\":[{\"queryRef\":\"water_source_related_crime.victim_gender\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"water_source_related_crime\",\"Type\":0},{\"Name\":\"l\",\"Entity\":\"location\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"crime_type\"}},\"Function\":5},\"Name\":\"CountNonNull(water_source_related_crime.crime_type)\",\"NativeReferenceName\":\"Count of crime_type\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"province_name\"},\"Name\":\"location.province_name\",\"NativeReferenceName\":\"province_name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"victim_gender\"},\"Name\":\"water_source_related_crime.victim_gender\",\"NativeReferenceName\":\"victim_gender\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"crime_type\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 345.00,
+          "width": 497.00,
+          "x": 783.00,
+          "y": 375.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"f9f525409a38af0f148f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":371.8095238095238,\"height\":336.45714285714286,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"water_source_related_crime.crime_type\",\"active\":true}],\"Series\":[{\"queryRef\":\"water_source_related_crime.victim_gender\"}],\"Y\":[{\"queryRef\":\"CountNonNull(water_source_related_crime.crime_type)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"water_source_related_crime\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"crime_type\"},\"Name\":\"water_source_related_crime.crime_type\",\"NativeReferenceName\":\"crime_type\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"victim_gender\"},\"Name\":\"water_source_related_crime.victim_gender\",\"NativeReferenceName\":\"victim_gender\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"crime_type\"}},\"Function\":5},\"Name\":\"CountNonNull(water_source_related_crime.crime_type)\",\"NativeReferenceName\":\"Count of crime_type\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"crime_type\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 336.46,
+          "width": 371.81,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "P3_Sokoto_Page",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"cf0fbd2cf62d9f73081f\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"province\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"province\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Sokoto'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}},{\"name\":\"61b5493f71614775436a\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"improvement\"}},\"type\":\"Categorical\",\"howCreated\":5,\"objects\":{}}]",
+      "height": 720.00,
+      "name": "646f9d6d01a722ef9c8a",
+      "ordinal": 5,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2ce244327716c4979223\",\"layouts\":[{\"id\":0,\"position\":{\"x\":914.2857142857143,\"y\":259.65714285714284,\"z\":4000,\"width\":276.7238095238095,\"height\":198.7047619047619,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"project_progress.Aggregated_improvements\"},{\"queryRef\":\"Count(project_progress.Aggregated_improvements)\"},{\"queryRef\":\"Sum(project_progress.budgeted_improvement_cost)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"},\"Name\":\"project_progress.Aggregated_improvements\",\"NativeReferenceName\":\"Improvements\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5},\"Name\":\"Count(project_progress.Aggregated_improvements)\",\"NativeReferenceName\":\"Qty\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost\"}},\"Function\":0},\"Name\":\"Sum(project_progress.budgeted_improvement_cost)\",\"NativeReferenceName\":\"Budget\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"}}}]},\"columnProperties\":{\"Count(project_progress.Aggregated_improvements)\":{\"displayName\":\"Qty\"},\"Sum(project_progress.budgeted_improvement_cost)\":{\"displayName\":\"Budget\"},\"project_progress.Aggregated_improvements\":{\"displayName\":\"Improvements\"}},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 198.70,
+          "width": 276.72,
+          "x": 914.29,
+          "y": 259.66,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"6e1c310b913c6b7dadcf\",\"layouts\":[{\"id\":0,\"position\":{\"x\":431.54285714285714,\"y\":54.857142857142854,\"z\":0,\"width\":398.62857142857143,\"height\":331.5809523809524,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"location.location_type\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(project_progress.budgeted_improvement_cost)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0},{\"Name\":\"l\",\"Entity\":\"location\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"location_type\"},\"Name\":\"location.location_type\",\"NativeReferenceName\":\"location_type\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost\"}},\"Function\":0},\"Name\":\"Sum(project_progress.budgeted_improvement_cost)\",\"NativeReferenceName\":\"Sum of budgeted_improvement_cost\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Budgeted Improvements'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 331.58,
+          "width": 398.63,
+          "x": 431.54,
+          "y": 54.86,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"7ff56029b0e723efb028\",\"layouts\":[{\"id\":0,\"position\":{\"x\":863.0857142857143,\"y\":19.504761904761907,\"z\":3000,\"width\":380.34285714285716,\"height\":236.4952380952381,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"project_progress.town\"},{\"queryRef\":\"water_source.number_of_people_served\"},{\"queryRef\":\"project_progress.improvement\"},{\"queryRef\":\"project_progress.budgeted_improvement_cost average per province_name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0},{\"Name\":\"w\",\"Entity\":\"water_source\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"},\"Name\":\"project_progress.budgeted_improvement_cost average per province_name\",\"NativeReferenceName\":\"Budget\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"town\"},\"Name\":\"project_progress.town\",\"NativeReferenceName\":\"town\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"improvement\"}},\"Function\":5},\"Name\":\"project_progress.improvement\",\"NativeReferenceName\":\"Count of improvement\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0},\"Name\":\"water_source.number_of_people_served\",\"NativeReferenceName\":\"Population\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"}}}]},\"columnProperties\":{\"project_progress.budgeted_improvement_cost average per province_name\":{\"displayName\":\"Budget\"},\"water_source.number_of_people_served\":{\"displayName\":\"Population\"}},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 236.50,
+          "width": 380.34,
+          "x": 863.09,
+          "y": 19.50,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"b1fac5eba98905eb7355\",\"layouts\":[{\"id\":0,\"position\":{\"x\":118.76288659793813,\"y\":0,\"z\":7000,\"width\":313.40206185567007,\"height\":56.08247422680412,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"SOKOTO REPORT \",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Arial Black\",\"fontSize\":\"18pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 56.08,
+          "width": 313.40,
+          "x": 118.76,
+          "y": 0.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"b79baca00454642787d2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":6000,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"cf8865f7999b39e798ca\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20.893470790378007,\"y\":393.67697594501715,\"z\":2000,\"width\":745.5670103092783,\"height\":294.7079037800687,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"project_progress.Aggregated_improvements\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(project_progress.Aggregated_improvements)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"},\"Name\":\"project_progress.Aggregated_improvements\",\"NativeReferenceName\":\"Aggregated_improvements\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5},\"Name\":\"CountNonNull(project_progress.Aggregated_improvements)\",\"NativeReferenceName\":\"Count of Aggregated_improvements\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Planned Improvements '\"}}}}}],\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Tally of Improvements'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Improvements'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 294.71,
+          "width": 745.57,
+          "x": 20.89,
+          "y": 393.68,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"e0790e02efaa826c345d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20.723809523809525,\"y\":54.857142857142854,\"z\":1000,\"width\":410.81904761904764,\"height\":331.5809523809524,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"project_progress.budgeted_improvement_cost average per province_name\"}],\"Category\":[{\"queryRef\":\"project_progress.Aggregated_improvements\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"},\"Name\":\"project_progress.budgeted_improvement_cost average per province_name\",\"NativeReferenceName\":\"budgeted_improvement_cost average per province_name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"},\"Name\":\"project_progress.Aggregated_improvements\",\"NativeReferenceName\":\"Aggregated_improvements\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Water Source '\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Cost in USD'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Improvement Costs on Water Sources'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 331.58,
+          "width": 410.82,
+          "x": 20.72,
+          "y": 54.86,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"fd4eba1682c17a4966b4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":766.7809523809524,\"y\":481.5238095238095,\"z\":5000,\"width\":513.2190476190476,\"height\":136.53333333333333,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"project_progress.budgeted_improvement_cost average per province_name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"},\"Name\":\"project_progress.budgeted_improvement_cost average per province_name\",\"NativeReferenceName\":\"budgeted_improvement_cost average per province_name\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"}}}]},\"columnProperties\":{\"improvement_budget_cost.Total Budget (USD)\":{\"formatString\":null},\"project_progress.Provincial Budget (USD)\":{\"formatString\":null},\"project_progress.budgeted_improvement_cost average per province_name\":{\"formatString\":\"\\\\$#,0.00;-\\\\$#,0.00;\\\\$#,0.00\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Budget (USD)'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 136.53,
+          "width": 513.22,
+          "x": 766.78,
+          "y": 481.52,
+          "z": 5000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Pollution Data",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "a266685293df8679a44d",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"44364aaf3938d6e02b56\",\"layouts\":[{\"id\":0,\"position\":{\"x\":849.846782431052,\"y\":0,\"z\":1000,\"width\":430.15321756894787,\"height\":376.5474974463738,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"well_pollution.results\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(well_pollution.results)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"well_pollution\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"results\"},\"Name\":\"well_pollution.results\",\"NativeReferenceName\":\"results\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"results\"}},\"Function\":5},\"Name\":\"CountNonNull(well_pollution.results)\",\"NativeReferenceName\":\"Count of results\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"results\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Water Sources'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 376.55,
+          "width": 430.15,
+          "x": 849.85,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"737b57f22a0d4b0dd750\",\"layouts\":[{\"id\":0,\"position\":{\"x\":427.53830439223697,\"y\":359.5505617977528,\"z\":2000,\"width\":424.923391215526,\"height\":359.5505617977528,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"well_pollution.contamination results\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(well_pollution.results)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"well_pollution\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"contamination results\"},\"Name\":\"well_pollution.contamination results\",\"NativeReferenceName\":\"contamination results\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"results\"}},\"Function\":5},\"Name\":\"CountNonNull(well_pollution.results)\",\"NativeReferenceName\":\"Count of results\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"results\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'State of Water Sources'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 359.55,
+          "width": 424.92,
+          "x": 427.54,
+          "y": 359.55,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"79c89a9ddbfae0413f7a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.152196118488252,\"y\":0,\"z\":0,\"width\":435.3830439223697,\"height\":406.61899897854954,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"shapeMap\",\"projections\":{\"Category\":[{\"queryRef\":\"location.province_name\"}],\"Value\":[{\"queryRef\":\"well_pollution.Polluted\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"location\",\"Type\":0},{\"Name\":\"w\",\"Entity\":\"well_pollution\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"province_name\"},\"Name\":\"location.province_name\",\"NativeReferenceName\":\"province_name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Polluted\"},\"Name\":\"well_pollution.Polluted\",\"NativeReferenceName\":\"Polluted\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"shape\":[{\"properties\":{\"map\":{\"geoJson\":{\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'packaged'\"}}},\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'MD_Provinces.json'\"}}},\"content\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"MD_Provinces06739857222921053.json\"}}}}},\"projectionEnum\":{\"expr\":{\"Literal\":{\"Value\":\"'albersUsa'\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"well_pollution\"}},\"Property\":\"results\"}},\"Function\":5}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#26ED26'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#FF0000'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}},{\"properties\":{\"showAllDataPoints\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FF0000'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1AAB40'\"}}}},\"nullColoringStrategy\":{\"strategy\":{\"expr\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'MAJI NDOGO'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Water Pollution'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 406.62,
+          "width": 435.38,
+          "x": 9.15,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "P3_Kilmani_Report",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"25e4049004ede02cf1aa\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"province\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"province\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Kilimani'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}},{\"name\":\"15334432775308859259\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"improvement\"}},\"type\":\"Categorical\",\"howCreated\":5}]",
+      "height": 720.00,
+      "name": "a4b2193ff0f2d46d7425",
+      "ordinal": 6,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3152491aeb5e54e268d2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20.893470790378007,\"y\":393.67697594501715,\"z\":1000,\"width\":745.5670103092783,\"height\":294.7079037800687,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"project_progress.Aggregated_improvements\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(project_progress.Aggregated_improvements)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"},\"Name\":\"project_progress.Aggregated_improvements\",\"NativeReferenceName\":\"Aggregated_improvements\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5},\"Name\":\"CountNonNull(project_progress.Aggregated_improvements)\",\"NativeReferenceName\":\"Count of Aggregated_improvements\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Improvements'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 294.71,
+          "width": 745.57,
+          "x": 20.89,
+          "y": 393.68,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"3873785d9f4e3e74481b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":5000,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"41b48180436eddb81643\",\"layouts\":[{\"id\":0,\"position\":{\"x\":804.5714285714286,\"y\":472.9904761904762,\"z\":4000,\"width\":448.6095238095238,\"height\":136.53333333333333,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"project_progress.budgeted_improvement_cost average per province_name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"},\"Name\":\"project_progress.budgeted_improvement_cost average per province_name\",\"NativeReferenceName\":\"budgeted_improvement_cost average per province_name\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"}}}]},\"columnProperties\":{\"improvement_budget_cost.Total Budget (USD)\":{\"formatString\":null},\"project_progress.Provincial Budget (USD)\":{\"formatString\":null},\"project_progress.Kilimani Provincial Budget (USD)\":{\"formatString\":null},\"project_progress.budgeted_improvement_cost average per province_name\":{\"formatString\":\"\\\\$#,0;(\\\\$#,0);\\\\$#,0\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Budget (USD)'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 136.53,
+          "width": 448.61,
+          "x": 804.57,
+          "y": 472.99,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"5b6f9a054244ea95c619\",\"layouts\":[{\"id\":0,\"position\":{\"x\":892.3428571428572,\"y\":277.9428571428571,\"z\":3000,\"width\":312.0761904761905,\"height\":179.2,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"project_progress.Aggregated_improvements\"},{\"queryRef\":\"Count(project_progress.Aggregated_improvements)\"},{\"queryRef\":\"Sum(project_progress.budgeted_improvement_cost)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"},\"Name\":\"project_progress.Aggregated_improvements\",\"NativeReferenceName\":\"Aggregated_improvements\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5},\"Name\":\"Count(project_progress.Aggregated_improvements)\",\"NativeReferenceName\":\"Qty\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost\"}},\"Function\":0},\"Name\":\"Sum(project_progress.budgeted_improvement_cost)\",\"NativeReferenceName\":\"Budget\"}]},\"columnProperties\":{\"Count(project_progress.Aggregated_improvements)\":{\"displayName\":\"Qty\"},\"Sum(project_progress.budgeted_improvement_cost)\":{\"displayName\":\"Budget\"}},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 179.20,
+          "width": 312.08,
+          "x": 892.34,
+          "y": 277.94,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"729339a7eac5b2e67ca9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":118.76288659793813,\"y\":0,\"z\":6000,\"width\":313.40206185567007,\"height\":56.08247422680412,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"KILIMANI REPORT \",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Arial Black\",\"fontSize\":\"18pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 56.08,
+          "width": 313.40,
+          "x": 118.76,
+          "y": 0.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"8c1b70b2224878de50e2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20.723809523809525,\"y\":54.857142857142854,\"z\":7000,\"width\":410.81904761904764,\"height\":331.5809523809524,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"project_progress.Aggregated_improvements\",\"active\":true}],\"Y\":[{\"queryRef\":\"project_progress.budgeted_improvement_cost average per province_name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"},\"Name\":\"project_progress.Aggregated_improvements\",\"NativeReferenceName\":\"Aggregated_improvements\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"},\"Name\":\"project_progress.budgeted_improvement_cost average per province_name\",\"NativeReferenceName\":\"budgeted_improvement_cost average per province_name\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Water Source '\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Cost in USD'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Improvement Costs on Water Sources'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 331.58,
+          "width": 410.82,
+          "x": 20.72,
+          "y": 54.86,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"b25d05eae82c20570235\",\"layouts\":[{\"id\":0,\"position\":{\"x\":842.3619047619047,\"y\":19.504761904761907,\"z\":2000,\"width\":410.81904761904764,\"height\":224.3047619047619,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"project_progress.town\"},{\"queryRef\":\"water_source.number_of_people_served\"},{\"queryRef\":\"project_progress.improvement\"},{\"queryRef\":\"project_progress.budgeted_improvement_cost average per province_name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0},{\"Name\":\"w\",\"Entity\":\"water_source\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"},\"Name\":\"project_progress.budgeted_improvement_cost average per province_name\",\"NativeReferenceName\":\"Budget\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"town\"},\"Name\":\"project_progress.town\",\"NativeReferenceName\":\"town\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"improvement\"}},\"Function\":5},\"Name\":\"project_progress.improvement\",\"NativeReferenceName\":\"Count of improvement\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0},\"Name\":\"water_source.number_of_people_served\",\"NativeReferenceName\":\"Sum of number_of_people_served\"}]},\"columnProperties\":{\"project_progress.budgeted_improvement_cost average per province_name\":{\"displayName\":\"Budget\"},\"water_source.number_of_people_served\":{\"displayName\":\"Population\"}},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 224.30,
+          "width": 410.82,
+          "x": 842.36,
+          "y": 19.50,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"f2707d858639d2ab1cd5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":444.95238095238096,\"y\":56.076190476190476,\"z\":0,\"width\":370.5904761904762,\"height\":330.3619047619048,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"location.location_type\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(project_progress.budgeted_improvement_cost)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0},{\"Name\":\"l\",\"Entity\":\"location\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"location_type\"},\"Name\":\"location.location_type\",\"NativeReferenceName\":\"location_type\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost\"}},\"Function\":0},\"Name\":\"Sum(project_progress.budgeted_improvement_cost)\",\"NativeReferenceName\":\"Sum of budgeted_improvement_cost\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Budgeted Improvements'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 330.36,
+          "width": 370.59,
+          "x": 444.95,
+          "y": 56.08,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Queues Page",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"f797619742a48330d835\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source\"}},\"Property\":\"type_of_water_source\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"water_source\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"type_of_water_source\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'shared_tap'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{}}]}}]",
+      "height": 720.00,
+      "name": "b7b1c98bfd91b208639e",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"6b1e74242c07914fef5a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":427.43202416918433,\"height\":386.10271903323263}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(visits.time_in_queue)\"}],\"Category\":[{\"queryRef\":\"location.province_name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"visits\",\"Type\":0},{\"Name\":\"l\",\"Entity\":\"location\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"time_in_queue\"}},\"Function\":0},\"Name\":\"Sum(visits.time_in_queue)\",\"NativeReferenceName\":\"Sum of time_in_queue\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"province_name\"},\"Name\":\"location.province_name\",\"NativeReferenceName\":\"province_name\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"time_in_queue\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"referenceLine\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 386.10,
+          "width": 427.43,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"802ffe70a5ee0887f933\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":386.10271903323263,\"z\":3000,\"width\":427.43202416918433,\"height\":333.89728096676737}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Avg(queue_composition.percent_child)\"},{\"queryRef\":\"Avg(queue_composition.percent_female)\"},{\"queryRef\":\"Avg(queue_composition.percent_male)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"q\",\"Entity\":\"queue_composition\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"q\"}},\"Property\":\"percent_child\"}},\"Function\":1},\"Name\":\"Avg(queue_composition.percent_child)\",\"NativeReferenceName\":\"Average of percent_child\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"q\"}},\"Property\":\"percent_female\"}},\"Function\":1},\"Name\":\"Avg(queue_composition.percent_female)\",\"NativeReferenceName\":\"Average of percent_female\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"q\"}},\"Property\":\"percent_male\"}},\"Function\":1},\"Name\":\"Avg(queue_composition.percent_male)\",\"NativeReferenceName\":\"Average of percent_male\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"q\"}},\"Property\":\"percent_child\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 333.90,
+          "width": 427.43,
+          "x": 0.00,
+          "y": 386.10,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"8da842a9c8798dc5ee18\",\"layouts\":[{\"id\":0,\"position\":{\"x\":515.7388316151203,\"y\":401.3745704467354,\"z\":2000,\"width\":494.8453608247423,\"height\":318.9003436426117}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"visits.name_of_day\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(visits.time_in_queue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"visits\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"name_of_day\"},\"Name\":\"visits.name_of_day\",\"NativeReferenceName\":\"name_of_day\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"time_in_queue\"}},\"Function\":1},\"Name\":\"Sum(visits.time_in_queue)\",\"NativeReferenceName\":\"Average of time_in_queue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"time_in_queue\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 318.90,
+          "width": 494.85,
+          "x": 515.74,
+          "y": 401.37,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"acdc0a4fac3c1672562e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":427.76632302405494,\"y\":0,\"z\":1000,\"width\":637.8006872852234,\"height\":401.3745704467354}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(visits.time_in_queue)\"}],\"Series\":[{\"queryRef\":\"visits.name_of_day\"}],\"Category\":[{\"queryRef\":\"visits.hour_of_day\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"visits\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"time_in_queue\"}},\"Function\":1},\"Name\":\"Sum(visits.time_in_queue)\",\"NativeReferenceName\":\"Average of time_in_queue\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"name_of_day\"},\"Name\":\"visits.name_of_day\",\"NativeReferenceName\":\"name_of_day\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"hour_of_day\"},\"Name\":\"visits.hour_of_day\",\"NativeReferenceName\":\"hour_of_day\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"time_in_queue\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"referenceLine\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Min line 1'\"}}},\"value\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"SelectRef\":{\"ExpressionName\":\"Sum(visits.time_in_queue)\"}},\"Function\":3}}},\"dataLabelShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Sum(visits.time_in_queue)\",\"id\":\"1\"}}]}}}",
+          "filters": "[]",
+          "height": 401.37,
+          "width": 637.80,
+          "x": 427.77,
+          "y": 0.00,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "P3_National_Page",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "c0c96cb31292d587a4fe",
+      "ordinal": 4,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2438af84b8f28f783a70\",\"layouts\":[{\"id\":0,\"position\":{\"x\":871.6636197440585,\"y\":188.37294332723948,\"z\":10000,\"width\":393.126142595978,\"height\":531.1882998171847,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"province_budget_cost.province\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(province_budget_cost.total_cost)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"province_budget_cost\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"province\"},\"Name\":\"province_budget_cost.province\",\"NativeReferenceName\":\"province\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"total_cost\"}},\"Function\":0},\"Name\":\"Sum(province_budget_cost.total_cost)\",\"NativeReferenceName\":\"Sum of total_cost\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"total_price\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 531.19,
+          "width": 393.13,
+          "x": 871.66,
+          "y": 188.37,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"2691dcfb31cf06797401\",\"layouts\":[{\"id\":0,\"position\":{\"x\":875.5287009063445,\"y\":137.0392749244713,\"z\":3000,\"width\":184.89425981873111,\"height\":47.85498489425982,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"image\",\"display\":{\"mode\":\"hidden\"},\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Toggle_button_improvement8132049039666256.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Bookmark'\"}}},\"bookmark\":{\"expr\":{\"Literal\":{\"Value\":\"'ff4a7733d105ed5b43ab'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 47.85,
+          "width": 184.89,
+          "x": 875.53,
+          "y": 137.04,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"44b298fdc1baad7c4285\",\"layouts\":[{\"id\":0,\"position\":{\"x\":871.6636197440585,\"y\":188.37294332723948,\"z\":9000,\"width\":393.126142595978,\"height\":531.1882998171847,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"improvement_budget_cost.improvement\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(improvement_budget_cost.total_cost)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"improvement_budget_cost\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"improvement\"},\"Name\":\"improvement_budget_cost.improvement\",\"NativeReferenceName\":\"improvement\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"total_cost\"}},\"Function\":0},\"Name\":\"Sum(improvement_budget_cost.total_cost)\",\"NativeReferenceName\":\"Sum of total_cost\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"total_cost\"}},\"Function\":0}}}]},\"display\":{\"mode\":\"hidden\"},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 531.19,
+          "width": 393.13,
+          "x": 871.66,
+          "y": 188.37,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"49127f3395193ca70d9f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":863.6144578313252,\"y\":0,\"z\":6000,\"width\":208.19277108433735,\"height\":128.881239242685,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"improvement_budget_cost.Total Budget (USD)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"improvement_budget_cost\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"Total Budget (USD)\"},\"Name\":\"improvement_budget_cost.Total Budget (USD)\",\"NativeReferenceName\":\"Total Budget (USD)\"}]},\"columnProperties\":{\"improvement_budget_cost.Total Budget (USD)\":{\"formatString\":\"\\\\$#,0;(\\\\$#,0);\\\\$#,0\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Budget (USD)'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 128.88,
+          "width": 208.19,
+          "x": 863.61,
+          "y": 0.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"58ce7e2ac0383f13d081\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1083.9242685025818,\"y\":0,\"z\":7000,\"width\":196.07573149741825,\"height\":128.881239242685,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"water_source.Formatted_change\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"water_source\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Formatted_change\"},\"Name\":\"water_source.Formatted_change\",\"NativeReferenceName\":\"Formatted_change\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'% Improvement'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 128.88,
+          "width": 196.08,
+          "x": 1083.92,
+          "y": 0.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"60deb8ffa3df51b819b1\",\"layouts\":[{\"id\":0,\"position\":{\"height\":582.8178694158075,\"width\":435.4639175257731,\"x\":418.96907216494844,\"y\":137.4570446735395,\"z\":11000,\"tabOrder\":9000}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0}}",
+          "height": 582.82,
+          "width": 435.46,
+          "x": 418.97,
+          "y": 137.46,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"728d5fbcbe35e65b05b2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35.301327885597544,\"y\":137.2829417773238,\"z\":12000,\"width\":383.08478038815116,\"height\":291.56281920326865,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"location.province_name\",\"active\":true}],\"Y\":[{\"queryRef\":\"project_progress.budgeted_improvement_cost average per province_name\"}],\"Series\":[{\"queryRef\":\"location.location_type\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0},{\"Name\":\"l\",\"Entity\":\"location\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"budgeted_improvement_cost average per province_name\"},\"Name\":\"project_progress.budgeted_improvement_cost average per province_name\",\"NativeReferenceName\":\"budgeted_improvement_cost average per province_name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"province_name\"},\"Name\":\"location.province_name\",\"NativeReferenceName\":\"province_name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"location_type\"},\"Name\":\"location.location_type\",\"NativeReferenceName\":\"location_type\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 291.56,
+          "width": 383.08,
+          "x": 35.30,
+          "y": 137.28,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"8275060237e30cbd42e6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":17.594501718213053,\"y\":12.096219931271463,\"z\":6000,\"width\":401.3745704467354,\"height\":279.3127147766323,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"project_progress.province\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(project_progress.improvement)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"province\"},\"Name\":\"project_progress.province\",\"NativeReferenceName\":\"province\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"improvement\"}},\"Function\":5},\"Name\":\"CountNonNull(project_progress.improvement)\",\"NativeReferenceName\":\"improvement\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"improvement\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'No. Of Improvements'\"}}}}}]}},\"parentGroupName\":\"60deb8ffa3df51b819b1\"}",
+          "filters": "[]",
+          "height": 279.31,
+          "width": 401.37,
+          "x": 17.59,
+          "y": 12.10,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"8f3af658d11afb9552e7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":709.3975903614457,\"y\":0,\"z\":5000,\"width\":144.30292598967299,\"height\":128.881239242685,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"water_source.basic_water_level\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"water_source\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"basic_water_level\"},\"Name\":\"water_source.basic_water_level\",\"NativeReferenceName\":\"basic_water_level\"}]},\"columnProperties\":{\"water_source.basic_water_level\":{\"formatString\":\"0%;-0%;0%\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"' Access to Basic Water'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 128.88,
+          "width": 144.30,
+          "x": 709.40,
+          "y": 0.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"99cb1e48f9964b3c78ee\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.896907216494846,\"y\":40.687285223367695,\"z\":2000,\"width\":500.34364261168383,\"height\":74.77663230240549,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"project_progress.province\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"province\"},\"Name\":\"project_progress.province\",\"NativeReferenceName\":\"province\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Provinces'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"31448d4cc31e0c5c3868\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"project_progress\"}},\"Property\":\"province\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"province\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 74.78,
+          "width": 500.34,
+          "x": 9.90,
+          "y": 40.69,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"9b12bb3e1878d3ee86c9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":435.4639175257732,\"height\":582.8178694158075,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}},\"selector\":{\"id\":\"default\"}}]}},\"parentGroupName\":\"60deb8ffa3df51b819b1\",\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 582.82,
+          "width": 435.46,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a30cc84d8eb4c2713d60\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.896907216494846,\"y\":0,\"z\":0,\"width\":283.7113402061855,\"height\":50.58419243986254,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"MAJI NDOGO WATER\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Arial\"}}]},{\"textRuns\":[{\"value\":\"National Water Survey Results\"}]}]}}]}}}",
+          "filters": "[]",
+          "height": 50.58,
+          "width": 283.71,
+          "x": 9.90,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"b49c15d5787859620cb6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":510.01721170395865,\"y\":1.1015490533562822,\"z\":8000,\"width\":187.26333907056798,\"height\":127.77969018932875,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"shapeMap\",\"projections\":{\"Category\":[{\"queryRef\":\"location.province_name\"}],\"Value\":[{\"queryRef\":\"CountNonNull(project_progress.improvement)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"location\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"province_name\"},\"Name\":\"location.province_name\",\"NativeReferenceName\":\"province_name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"improvement\"}},\"Function\":5},\"Name\":\"CountNonNull(project_progress.improvement)\",\"NativeReferenceName\":\"Count of improvement\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"map\":{\"geoJson\":{\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'packaged'\"}}},\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'MD_Provinces.json'\"}}},\"content\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"MD_Provinces6933658158161689.json\"}}}}},\"projectionEnum\":{\"expr\":{\"Literal\":{\"Value\":\"'albersUsa'\"}}}}}],\"dataPoint\":[{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'maxColor'\"}}}},\"nullColoringStrategy\":{\"strategy\":{\"expr\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 127.78,
+          "width": 187.26,
+          "x": 510.02,
+          "y": 1.10,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"b7aadb39a63100f80f45\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35.18900343642611,\"y\":448.659793814433,\"z\":1000,\"width\":341.9931271477663,\"height\":271.6151202749141,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"water_source.type_of_water_source\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(water_source.number_of_people_served)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"water_source\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"type_of_water_source\"},\"Name\":\"water_source.type_of_water_source\",\"NativeReferenceName\":\"type_of_water_source\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0},\"Name\":\"Sum(water_source.number_of_people_served)\",\"NativeReferenceName\":\"Sum of number_of_people_served\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Water Source Type'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 271.62,
+          "width": 341.99,
+          "x": 35.19,
+          "y": 448.66,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"be48a57589cd4ba9ab01\",\"layouts\":[{\"id\":0,\"position\":{\"x\":17.594501718213053,\"y\":291.40893470790377,\"z\":8000,\"width\":401.3745704467354,\"height\":291.40893470790377,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"project_progress.Aggregated_improvements\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(project_progress.Aggregated_improvements)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"project_progress\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"},\"Name\":\"project_progress.Aggregated_improvements\",\"NativeReferenceName\":\"Aggregated_improvements\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5},\"Name\":\"CountNonNull(project_progress.Aggregated_improvements)\",\"NativeReferenceName\":\"Count of Aggregated_improvements\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Aggregated_improvements\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true},\"parentGroupName\":\"60deb8ffa3df51b819b1\"}",
+          "filters": "[]",
+          "height": 291.41,
+          "width": 401.37,
+          "x": 17.59,
+          "y": 291.41,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"c4265d6b6d3de927c774\",\"layouts\":[{\"id\":0,\"position\":{\"x\":862.4773413897282,\"y\":137.0392749244713,\"z\":4000,\"width\":188.1570996978852,\"height\":50.03021148036254,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Toggle_button_province1864932614446897.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Bookmark'\"}}},\"bookmark\":{\"expr\":{\"Literal\":{\"Value\":\"'f49e3f4b8ff8e02738a6'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 50.03,
+          "width": 188.16,
+          "x": 862.48,
+          "y": 137.04,
+          "z": 4000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "National Page",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "e61b061e15e4712a8dc4",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"4515aa3f8a609336ffb4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":813.4939759036145,\"y\":15.421686746987953,\"z\":4000,\"width\":454.9397590361446,\"height\":637.4297188755021,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Series\":[{\"queryRef\":\"water_source.type_of_water_source\"}],\"Category\":[{\"queryRef\":\"location.town_name\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(water_source.type_of_water_source)\"}],\"Tooltips\":[{\"queryRef\":\"Min(location.province_name)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"water_source\",\"Type\":0},{\"Name\":\"l\",\"Entity\":\"location\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"type_of_water_source\"},\"Name\":\"water_source.type_of_water_source\",\"NativeReferenceName\":\"type_of_water_source\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"town_name\"},\"Name\":\"location.town_name\",\"NativeReferenceName\":\"town_name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"type_of_water_source\"}},\"Function\":5},\"Name\":\"CountNonNull(water_source.type_of_water_source)\",\"NativeReferenceName\":\"Count of type_of_water_source\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"province_name\"}},\"Function\":3},\"Name\":\"Min(location.province_name)\",\"NativeReferenceName\":\"First province_name\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"type_of_water_source\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":3,\"hasDefaultSort\":true}}",
+          "filters": "[{\"name\":\"2b4d0ffc954c8f394dc2\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source\"}},\"Property\":\"type_of_water_source\"}},\"Function\":5}},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false,\"ordinal\":0},{\"name\":\"57a982fc6cea96a22ad4\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"location\"}},\"Property\":\"town_name\"}},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false,\"ordinal\":1},{\"name\":\"e66cac404dfb2c7b5142\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"water_source\"}},\"Property\":\"type_of_water_source\"}},\"type\":\"Categorical\",\"howCreated\":0,\"isHiddenInViewMode\":false,\"ordinal\":2},{\"name\":\"d085bfc5f9974dc6f7ef\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"visits\"}},\"Property\":\"visit_count\"}},\"type\":\"Advanced\",\"howCreated\":1,\"ordinal\":3}]",
+          "height": 637.43,
+          "width": 454.94,
+          "x": 813.49,
+          "y": 15.42,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"5b278b472407a290e7da\",\"layouts\":[{\"id\":0,\"position\":{\"x\":393,\"y\":0,\"width\":373,\"height\":334,\"z\":3000,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(water_source.number_of_people_served)\"}],\"Category\":[{\"queryRef\":\"location.location_type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"water_source\",\"Type\":0},{\"Name\":\"l\",\"Entity\":\"location\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0},\"Name\":\"CountNonNull(water_source.number_of_people_served)\",\"NativeReferenceName\":\"Sum of number_of_people_served\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"location_type\"},\"Name\":\"location.location_type\",\"NativeReferenceName\":\"location_type1\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"name\":\"8ea8476f8755cadc9f5e\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"visits\"}},\"Property\":\"visit_count\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"visits\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"visit_count\"}},\"Right\":{\"Literal\":{\"Value\":\"1L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":1}]",
+          "height": 334.00,
+          "width": 373.00,
+          "x": 393.00,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"848244a7e51318ff42a1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":373.9759036144579,\"y\":357.2690763052209,\"z\":1000,\"width\":372.69076305220887,\"height\":334.13654618473896,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(water_source.number_of_people_served)\"}],\"Group\":[{\"queryRef\":\"water_source.type_of_water_source\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"water_source\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"number_of_people_served\"}},\"Function\":0},\"Name\":\"Sum(water_source.number_of_people_served)\",\"NativeReferenceName\":\"Sum of number_of_people_served\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"type_of_water_source\"},\"Name\":\"water_source.type_of_water_source\",\"NativeReferenceName\":\"type_of_water_source\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[{\"name\":\"a12c0a43de9f526f59e6\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"visits\"}},\"Property\":\"visit_count\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"visits\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"visit_count\"}},\"Right\":{\"Literal\":{\"Value\":\"1L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":1}]",
+          "height": 334.14,
+          "width": 372.69,
+          "x": 373.98,
+          "y": 357.27,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"c6aaf0643c97de6addb5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.281124497991968,\"y\":0,\"z\":0,\"width\":372.69076305220887,\"height\":334.13654618473896,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"shapeMap\",\"projections\":{\"Category\":[{\"queryRef\":\"location.province_name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"location\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"province_name\"},\"Name\":\"location.province_name\",\"NativeReferenceName\":\"province_name\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"map\":{\"geoJson\":{\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'packaged'\"}}},\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'MD_Provinces.json'\"}}},\"content\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"MD_Provinces06739857222921053.json\"}}}}},\"projectionEnum\":{\"expr\":{\"Literal\":{\"Value\":\"'albersUsa'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 334.14,
+          "width": 372.69,
+          "x": 10.28,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"c914149589592e9e3edc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.281124497991968,\"y\":357.46780938185725,\"width\":372.69076305220887,\"height\":334.13654618473896,\"z\":2000,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"water_source.type_of_water_source\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(water_source.type_of_water_source)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"water_source\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"type_of_water_source\"},\"Name\":\"water_source.type_of_water_source\",\"NativeReferenceName\":\"type_of_water_source\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"type_of_water_source\"}},\"Function\":5},\"Name\":\"CountNonNull(water_source.type_of_water_source)\",\"NativeReferenceName\":\"Count of type_of_water_source\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"type_of_water_source\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"name\":\"2ccb487e0671b6fed001\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"visits\"}},\"Property\":\"visit_count\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"visits\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"visit_count\"}},\"Right\":{\"Literal\":{\"Value\":\"1L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":1}]",
+          "height": 334.14,
+          "width": 372.69,
+          "x": 10.28,
+          "y": 357.47,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "AccessibleDefault"
+}
