@@ -89,5 +89,5 @@ The project is broken down to three major parts:
  2. [Key Insights](Key%20Insights.md)
  3. [Improvement Initiatives](Improvement%20Initiatives.md)
 
- [Let's Get Started](Introduction.md)
+ [Let's Get Started](Introduction.md)→
 
