@@ -65,7 +65,7 @@ Through interactive dashboards and visual reports, the project aims to communica
 
   
 
-| Tool / Technology | Purpose |
+| Tool/Technology | Purpose |
 
 |--------------------|----------|
 

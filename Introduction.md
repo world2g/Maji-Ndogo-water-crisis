@@ -8,7 +8,7 @@ Maji Ndogo is a project that analyzes the water accessibility situation in the r
 
 ## Population Summary and Accessibility to Water
 
-![Maji Ndogo Population Summary](/Images/National%20Population.png)
+![Maji Ndogo Population Summary](/Resources/Images/Part1/National%20Population.png)
 
 - The snapshot above illustrates the population distribution in Maji Ndogo.
 - A significant portion of the population (63.85%) resides in rural areas.
@@ -20,7 +20,7 @@ Maji Ndogo is a project that analyzes the water accessibility situation in the r
 
 Since approximately **43%** of the population relies on shared taps, analyzing queue times provides valuable insight into water accessibility.
 
-![Visit Statistics](/Images/Visits.png)
+![Visit Statistics](/Resources/Images/Part1/Visits.png)
 
 ### Key Insights:
 1. **Average Queue Times by Day of the Week**  
@@ -42,7 +42,7 @@ Since approximately **43%** of the population relies on shared taps, analyzing q
 
 Crimes have been reported against individuals fetching water from local stations.
 
-![Crime Report](/Resources\Images\Part1\Crime%20Report.png)
+![Crime Report](/Resources/Images/Part1/Crime%20Report.png)
 
 ### Key Findings:
 

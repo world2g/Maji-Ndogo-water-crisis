@@ -9,7 +9,7 @@ Through the analysis of **queue times at shared water sources** and **crime stat
 
 ## National Water Access Report
 
-![National Report](Resources/Images/Part2/National%20Report.png)
+![National Report](/Resources/Images/Part2/National%20Report.png)
 
 Majority of the population in Maji Ndogo live in **rural areas**. 
 For the water sources, **Wells** are the most common water sources, but **shared taps** serve the most people. Most wells are located in the rural areas.
@@ -22,7 +22,7 @@ As for the towns in  the Maji Ndogo provinces, **Harare** seems to have the most
 
   
 
-![Crime Report](Resources\Images\Part2\Crime%Report.png)
+![Crime Report](/Resources/Images/Part2/Crime%20Report.png)
 
   
 
@@ -36,18 +36,12 @@ These statistics show that security is an issue for people fetching water, espec
 
   
 
-![Queue Report](/Resources/Images/Part2/Queue%20Report.png)
-
-  
 
 ## Queue Report
 
+![Queue Report](/Resources/Images/Part2/Queue%20Report.png)
 
 Approximately **43%** of the population relies on **shared taps**. This makes  analyzing queue times provides valuable insight into water accessibility.
-
-  
-
-![Visit Statistics](/Images/Visits.png)
 
   **Women** queue the most for water. This could also be a factor as to why they face the most crime. 
  The data also shows that queues are longest on **Saturdays** , escpecially between **6 pm and 7 pm**.
