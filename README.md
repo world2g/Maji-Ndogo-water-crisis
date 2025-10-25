@@ -80,7 +80,7 @@ Through interactive dashboards and visual reports, the project aims to communica
 
 The project is broken down to three major parts:
 
- 1. [Introduction](Introuction.md)
+ 1. [Introduction](Introduction.md)
  2. [Key Insights](Key%20Insights.md)
  3. [Improvement Initiatives](Improvement%20Initiatives.md)
 
