@@ -66,11 +66,11 @@ Through interactive dashboards and visual reports, the project aims to communica
   
 
 | Tool/Technology | Purpose |
-|------|-------------|--------|
-| **Power BI** | Data modeling, dashboard creation, and interactive visualizations | 
-| **Microsoft Excel** | Data cleaning and preprocessing | 
-| **DAX (Data Analysis Expressions)** | Calculations and performance metrics | 
-| **Markdown & GitHub** | Documentation and version control | 
+|-------------|----------|
+| **Power BI** | Data modeling, dashboard creation, and interactive visualizations |
+| **Microsoft Excel** | Data cleaning and preprocessing |
+| **DAX (Data Analysis Expressions)** | Calculations and performance metrics |
+| **Markdown & GitHub** | Documentation and version control |
 
   
 
